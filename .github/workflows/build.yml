@@ -1,0 +1,54 @@
+# On main: rebuild derived/ from runs/ and prices/, commit it, and tell the site to redeploy.
+# Weekly: refresh API prices first.
+name: build
+on:
+  push:
+    branches: [main]
+    paths: ["runs/**", "prices/**", "BENCH_REF"]
+  schedule:
+    - cron: "17 6 * * 1"  # Mondays 06:17 UTC: API price refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Refresh API prices
+        if: github.event_name != 'push'
+        run: uv run --with pyyaml --with httpx scripts/update_api_prices.py
+      - name: Install gpubench
+        run: uv tool install "git+https://github.com/tgarg01/silybench-bench@$(cat BENCH_REF)"
+      - run: gpubench dataset check
+      - run: gpubench dataset build
+      - name: Commit derived/
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices/api.yaml derived
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Rebuild derived data"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true' && env.SITE_DISPATCH_TOKEN != ''
+        env:
+          SITE_DISPATCH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $SITE_DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/tgarg01/silybench-site/dispatches \
+            -d '{"event_type":"data-updated"}'

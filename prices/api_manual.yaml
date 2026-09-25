@@ -1,0 +1,6 @@
+# API list prices not available through OpenRouter's API, copied by hand from provider pages.
+# scripts/update_api_prices.py merges these with the OpenRouter endpoints into prices/api.yaml.
+# Same model only (no "similar" models): a Qwen3-8B benchmark is compared with Qwen3-8B APIs.
+offers:
+  - {model: Qwen/Qwen3-8B, provider: Fireworks, usd_per_1m_input: 0.20, usd_per_1m_output: 0.20, source: "https://docs.fireworks.ai/serverless/pricing", fetched_at: 2026-09-25, notes: "4B-16B size-tier price (Standard tier)"}
+  - {model: Qwen/Qwen3-14B, provider: Fireworks, usd_per_1m_input: 0.20, usd_per_1m_output: 0.20, source: "https://docs.fireworks.ai/serverless/pricing", fetched_at: 2026-09-25, notes: "4B-16B size-tier price (Standard tier); serverless availability varies"}

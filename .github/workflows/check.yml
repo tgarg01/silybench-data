@@ -1,0 +1,30 @@
+# Every PR: validate submitted runs and make sure derived/ still builds.
+name: check
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install gpubench
+        run: uv tool install "git+https://github.com/tgarg01/silybench-bench@$(cat BENCH_REF)"
+      - name: Validate runs
+        run: gpubench dataset check
+      - name: Build derived/ (dry run)
+        run: gpubench dataset build --out /tmp/derived
+      - name: Summary
+        run: |
+          echo "### Comparisons after this PR" >> "$GITHUB_STEP_SUMMARY"
+          python3 - >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import csv
+          rows = list(csv.DictReader(open("/tmp/derived/csv/comparisons.csv")))
+          print("| model | workload | hosted $/1k req | API $/1k req | saving at capacity |")
+          print("|---|---|---|---|---|")
+          for r in rows:
+              f = lambda k: f"{float(r[k]):.4f}" if r[k] else "-"
+              s = f"{float(r['savings_at_capacity']):.0%}" if r["savings_at_capacity"] else "-"
+              print(f"| {r['model']} | {r['workload']} | {f('hosted_usd_per_1k_requests')} | {f('api_usd_per_1k_requests')} | {s} |")
+          PY

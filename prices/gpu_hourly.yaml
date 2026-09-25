@@ -1,0 +1,43 @@
+# GPU rental list prices, USD per GPU per hour (whole-machine price = this x GPU count).
+# gpu_type uses the benchmark's normalised names (gpubench/hardware.py), so one benchmark of a GPU
+# prices every row with the same gpu_type. Update rules: see CONTRIBUTING.md. Always cite `source`
+# and set `checked_at` to the day you looked. Taxes and storage/egress are excluded.
+offers:
+  # --- H100 SXM 80GB ------------------------------------------------------------------------
+  - {provider: runpod, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 2.69, product: "H100 SXM, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 3.49, product: "H100 SXM, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: vast, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 3.17, product: "H100 SXM, marketplace median", source: "https://console.vast.ai/api/v0/bundles/", checked_at: 2026-09-25, notes: "median of 8 verified rentable 1x offers (lowest $1.98); marketplace prices move daily"}
+  - {provider: nebius, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 3.85, product: "HGX H100", source: "https://nebius.com/prices", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 4.29, product: "1x H100 SXM", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 3.99, min_gpus: 8, product: "8x H100 SXM", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: gcp, gpu_type: H100-80GB, provisioning: spot, usd_per_gpu_hour: 6.57, product: "a3-highgpu-1g Spot, us-central1", source: "https://cloud.google.com/products/compute/pricing/accelerator-optimized", checked_at: 2026-09-24, notes: "GPU $5.8632 + 26 vCPU + 234 GiB from the Cloud Billing catalog; boot disk excluded"}
+  - {provider: gcp, gpu_type: H100-80GB, provisioning: on-demand, usd_per_gpu_hour: 10.92, product: "a3-highgpu-1g, us-central1", source: "https://instances.vantage.sh/gcp/a3-highgpu-1g", checked_at: 2026-09-25, notes: "1g/2g/4g shapes are Spot/Flex-start only; on-demand-equivalent list price"}
+  # --- H100 PCIe / NVL ------------------------------------------------------------------------
+  - {provider: runpod, gpu_type: H100-PCIe-80GB, provisioning: on-demand, usd_per_gpu_hour: 1.99, product: "H100 PCIe, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: H100-PCIe-80GB, provisioning: on-demand, usd_per_gpu_hour: 2.89, product: "H100 PCIe, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: H100-PCIe-80GB, provisioning: on-demand, usd_per_gpu_hour: 3.29, product: "1x H100 PCIe", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: H100-NVL-94GB, provisioning: on-demand, usd_per_gpu_hour: 2.59, product: "H100 NVL, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: H100-NVL-94GB, provisioning: on-demand, usd_per_gpu_hour: 3.19, product: "H100 NVL, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  # --- H200 / B200 / GH200 --------------------------------------------------------------------
+  - {provider: runpod, gpu_type: H200-141GB, provisioning: on-demand, usd_per_gpu_hour: 3.59, product: "H200, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: H200-141GB, provisioning: on-demand, usd_per_gpu_hour: 4.59, product: "H200, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: nebius, gpu_type: H200-141GB, provisioning: on-demand, usd_per_gpu_hour: 4.50, product: "HGX H200", source: "https://nebius.com/prices", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: B200-180GB, provisioning: on-demand, usd_per_gpu_hour: 5.98, product: "B200, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: B200-180GB, provisioning: on-demand, usd_per_gpu_hour: 6.79, product: "B200, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: B200-180GB, provisioning: on-demand, usd_per_gpu_hour: 6.99, product: "1x B200 SXM6", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: nebius, gpu_type: B200-180GB, provisioning: on-demand, usd_per_gpu_hour: 7.15, product: "HGX B200", source: "https://nebius.com/prices", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: GH200-96GB, provisioning: on-demand, usd_per_gpu_hour: 2.29, product: "1x GH200", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  # --- A100 -----------------------------------------------------------------------------------
+  - {provider: runpod, gpu_type: A100-80GB, provisioning: on-demand, usd_per_gpu_hour: 1.39, product: "A100 SXM, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: A100-80GB, provisioning: on-demand, usd_per_gpu_hour: 1.59, product: "A100 SXM, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: A100-80GB, provisioning: on-demand, usd_per_gpu_hour: 2.79, min_gpus: 8, product: "8x A100 SXM 80GB", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: A100-PCIe-80GB, provisioning: on-demand, usd_per_gpu_hour: 1.19, product: "A100 PCIe, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: A100-PCIe-80GB, provisioning: on-demand, usd_per_gpu_hour: 1.59, product: "A100 PCIe, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: A100-40GB, provisioning: on-demand, usd_per_gpu_hour: 1.99, product: "1x A100 SXM 40GB", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  # --- Ada / consumer ---------------------------------------------------------------------------
+  - {provider: runpod, gpu_type: L40S-48GB, provisioning: on-demand, usd_per_gpu_hour: 0.79, product: "L40S, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: L40S-48GB, provisioning: on-demand, usd_per_gpu_hour: 1.09, product: "L40S, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: nebius, gpu_type: L40S-48GB, provisioning: on-demand, usd_per_gpu_hour: 1.55, product: "L40S (Intel)", source: "https://nebius.com/prices", checked_at: 2026-09-25}
+  - {provider: lambda, gpu_type: A10-24GB, provisioning: on-demand, usd_per_gpu_hour: 1.29, product: "1x A10", source: "https://lambda.ai/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: RTX4090-24GB, provisioning: on-demand, usd_per_gpu_hour: 0.34, product: "RTX 4090, Community Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}
+  - {provider: runpod, gpu_type: RTX4090-24GB, provisioning: on-demand, usd_per_gpu_hour: 0.74, product: "RTX 4090, Secure Cloud", source: "https://www.runpod.io/pricing", checked_at: 2026-09-25}

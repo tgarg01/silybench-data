@@ -1,0 +1,725 @@
+{
+  "$defs": {
+    "AccuracyResult": {
+      "properties": {
+        "task": {
+          "title": "Task",
+          "type": "string"
+        },
+        "metric": {
+          "title": "Metric",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "stderr": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stderr"
+        },
+        "num_fewshot": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Num Fewshot"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        },
+        "num_samples": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Num Samples"
+        }
+      },
+      "required": [
+        "task",
+        "metric",
+        "value"
+      ],
+      "title": "AccuracyResult",
+      "type": "object"
+    },
+    "CapacityResult": {
+      "description": "How many users one deployment can serve simultaneously for a workload.",
+      "properties": {
+        "workload": {
+          "title": "Workload",
+          "type": "string"
+        },
+        "slo": {
+          "$ref": "#/$defs/SLO"
+        },
+        "max_users_slo": {
+          "title": "Max Users Slo",
+          "type": "integer"
+        },
+        "max_users_kv_cache": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Max Users Kv Cache"
+        },
+        "output_throughput_at_max_users": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Output Throughput At Max Users"
+        },
+        "probed": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "title": "Probed",
+          "type": "object"
+        }
+      },
+      "required": [
+        "workload",
+        "slo",
+        "max_users_slo",
+        "max_users_kv_cache",
+        "output_throughput_at_max_users",
+        "probed"
+      ],
+      "title": "CapacityResult",
+      "type": "object"
+    },
+    "Hardware": {
+      "properties": {
+        "gpu_type": {
+          "title": "Gpu Type",
+          "type": "string"
+        },
+        "gpu_count": {
+          "default": 1,
+          "title": "Gpu Count",
+          "type": "integer"
+        },
+        "node_count": {
+          "default": 1,
+          "title": "Node Count",
+          "type": "integer"
+        },
+        "provider": {
+          "default": "unknown",
+          "title": "Provider",
+          "type": "string"
+        },
+        "machine_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Machine Type"
+        },
+        "zone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Zone"
+        },
+        "provisioning": {
+          "default": "on-demand",
+          "enum": [
+            "spot",
+            "on-demand",
+            "reserved",
+            "flex-start"
+          ],
+          "title": "Provisioning",
+          "type": "string"
+        },
+        "price_per_hour_usd": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Per Hour Usd"
+        },
+        "cloud": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cloud"
+        }
+      },
+      "required": [
+        "gpu_type"
+      ],
+      "title": "Hardware",
+      "type": "object"
+    },
+    "ITL": {
+      "description": "Inter-token latency. The median is reported too (the headline 'IDT' metric).",
+      "properties": {
+        "p95": {
+          "title": "P95",
+          "type": "number"
+        },
+        "p99": {
+          "title": "P99",
+          "type": "number"
+        },
+        "median": {
+          "title": "Median",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p95",
+        "p99",
+        "median"
+      ],
+      "title": "ITL",
+      "type": "object"
+    },
+    "ModelInfo": {
+      "properties": {
+        "hf_id": {
+          "title": "Hf Id",
+          "type": "string"
+        },
+        "revision": {
+          "title": "Revision",
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "bf16",
+            "fp16",
+            "fp8"
+          ],
+          "title": "Precision",
+          "type": "string"
+        },
+        "max_model_len": {
+          "title": "Max Model Len",
+          "type": "integer"
+        },
+        "thinking": {
+          "title": "Thinking",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "hf_id",
+        "revision",
+        "precision",
+        "max_model_len",
+        "thinking"
+      ],
+      "title": "ModelInfo",
+      "type": "object"
+    },
+    "Parallelism": {
+      "properties": {
+        "tp": {
+          "default": 1,
+          "title": "Tp",
+          "type": "integer"
+        },
+        "pp": {
+          "default": 1,
+          "title": "Pp",
+          "type": "integer"
+        },
+        "dp": {
+          "default": 1,
+          "title": "Dp",
+          "type": "integer"
+        },
+        "ep": {
+          "default": 1,
+          "title": "Ep",
+          "type": "integer"
+        }
+      },
+      "title": "Parallelism",
+      "type": "object"
+    },
+    "Percentiles": {
+      "description": "Latency percentiles in ms. We report p95 and p99 only.",
+      "properties": {
+        "p95": {
+          "title": "P95",
+          "type": "number"
+        },
+        "p99": {
+          "title": "P99",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p95",
+        "p99"
+      ],
+      "title": "Percentiles",
+      "type": "object"
+    },
+    "PerfPoint": {
+      "description": "One (workload, concurrency) measurement: the median across repeats.",
+      "properties": {
+        "workload": {
+          "title": "Workload",
+          "type": "string"
+        },
+        "input_len": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Input Len"
+        },
+        "output_len": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Output Len"
+        },
+        "concurrency": {
+          "title": "Concurrency",
+          "type": "integer"
+        },
+        "num_prompts": {
+          "title": "Num Prompts",
+          "type": "integer"
+        },
+        "repeats": {
+          "title": "Repeats",
+          "type": "integer"
+        },
+        "completed": {
+          "title": "Completed",
+          "type": "integer"
+        },
+        "failed": {
+          "title": "Failed",
+          "type": "integer"
+        },
+        "duration_s": {
+          "title": "Duration S",
+          "type": "number"
+        },
+        "ttft_ms": {
+          "$ref": "#/$defs/Percentiles"
+        },
+        "tpot_ms": {
+          "$ref": "#/$defs/Percentiles"
+        },
+        "itl_ms": {
+          "$ref": "#/$defs/ITL"
+        },
+        "e2el_ms": {
+          "$ref": "#/$defs/Percentiles"
+        },
+        "request_throughput": {
+          "title": "Request Throughput",
+          "type": "number"
+        },
+        "output_throughput": {
+          "title": "Output Throughput",
+          "type": "number"
+        },
+        "total_token_throughput": {
+          "title": "Total Token Throughput",
+          "type": "number"
+        },
+        "output_throughput_per_gpu": {
+          "title": "Output Throughput Per Gpu",
+          "type": "number"
+        },
+        "tokens_per_s_per_user": {
+          "title": "Tokens Per S Per User",
+          "type": "number"
+        },
+        "avg_power_w": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Avg Power W"
+        },
+        "peak_memory_gb": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Peak Memory Gb"
+        },
+        "output_tokens_per_joule": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Tokens Per Joule"
+        },
+        "usd_per_1m_output_tokens": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usd Per 1M Output Tokens"
+        },
+        "slo_pass": {
+          "title": "Slo Pass",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "workload",
+        "input_len",
+        "output_len",
+        "concurrency",
+        "num_prompts",
+        "repeats",
+        "completed",
+        "failed",
+        "duration_s",
+        "ttft_ms",
+        "tpot_ms",
+        "itl_ms",
+        "e2el_ms",
+        "request_throughput",
+        "output_throughput",
+        "total_token_throughput",
+        "output_throughput_per_gpu",
+        "tokens_per_s_per_user",
+        "slo_pass"
+      ],
+      "title": "PerfPoint",
+      "type": "object"
+    },
+    "SLO": {
+      "description": "A concurrency level 'passes' when every limit holds. Drives max concurrent users.",
+      "properties": {
+        "ttft_p99_ms": {
+          "default": 2000.0,
+          "title": "Ttft P99 Ms",
+          "type": "number"
+        },
+        "itl_median_ms": {
+          "default": 50.0,
+          "title": "Itl Median Ms",
+          "type": "number"
+        }
+      },
+      "title": "SLO",
+      "type": "object"
+    },
+    "SoftwareInfo": {
+      "properties": {
+        "engine": {
+          "const": "vllm",
+          "default": "vllm",
+          "title": "Engine",
+          "type": "string"
+        },
+        "engine_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine Version"
+        },
+        "engine_image": {
+          "title": "Engine Image",
+          "type": "string"
+        },
+        "engine_image_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine Image Digest"
+        },
+        "runtime": {
+          "anyOf": [
+            {
+              "enum": [
+                "docker",
+                "native"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Runtime"
+        },
+        "lm_eval_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lm Eval Version"
+        },
+        "gpubench_version": {
+          "title": "Gpubench Version",
+          "type": "string"
+        },
+        "nvidia_driver": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nvidia Driver"
+        },
+        "cuda_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cuda Version"
+        }
+      },
+      "required": [
+        "engine_image",
+        "gpubench_version"
+      ],
+      "title": "SoftwareInfo",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "default": 2,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "campaign": {
+      "title": "Campaign",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Git Commit"
+    },
+    "config_hash": {
+      "title": "Config Hash",
+      "type": "string"
+    },
+    "sample": {
+      "default": false,
+      "title": "Sample",
+      "type": "boolean"
+    },
+    "complete": {
+      "default": true,
+      "title": "Complete",
+      "type": "boolean"
+    },
+    "hardware": {
+      "$ref": "#/$defs/Hardware"
+    },
+    "parallelism": {
+      "$ref": "#/$defs/Parallelism"
+    },
+    "software": {
+      "$ref": "#/$defs/SoftwareInfo"
+    },
+    "model": {
+      "$ref": "#/$defs/ModelInfo"
+    },
+    "serving_args": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Serving Args",
+      "type": "array"
+    },
+    "kv_cache_tokens": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Kv Cache Tokens"
+    },
+    "merged_from": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Merged From",
+      "type": "array"
+    },
+    "perf": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PerfPoint"
+      },
+      "title": "Perf",
+      "type": "array"
+    },
+    "capacity": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/CapacityResult"
+      },
+      "title": "Capacity",
+      "type": "array"
+    },
+    "accuracy": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/AccuracyResult"
+      },
+      "title": "Accuracy",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "campaign",
+    "created_at",
+    "git_commit",
+    "config_hash",
+    "hardware",
+    "parallelism",
+    "software",
+    "model",
+    "serving_args"
+  ],
+  "title": "RunResult",
+  "type": "object"
+}

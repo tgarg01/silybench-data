@@ -1,0 +1,3 @@
+# Hugging Face id -> OpenRouter model slug (used by scripts/update_api_prices.py).
+Qwen/Qwen3-8B: qwen/qwen3-8b
+Qwen/Qwen3-14B: qwen/qwen3-14b

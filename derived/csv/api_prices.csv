@@ -1,0 +1,7 @@
+model,provider,usd_per_1m_input,usd_per_1m_output,quantization,context_length,source,fetched_at,notes
+Qwen/Qwen3-14B,Fireworks,0.2,0.2,,,https://docs.fireworks.ai/serverless/pricing,2026-09-25,4B-16B size-tier price (Standard tier); serverless availability varies
+Qwen/Qwen3-14B,NextBit,0.1,0.22,int4,40960,https://openrouter.ai/qwen/qwen3-14b/providers,2026-09-25,
+Qwen/Qwen3-14B,DeepInfra,0.12,0.24,fp8,40960,https://openrouter.ai/qwen/qwen3-14b/providers,2026-09-25,
+Qwen/Qwen3-14B,Alibaba,0.2275,0.91,,131072,https://openrouter.ai/qwen/qwen3-14b/providers,2026-09-25,
+Qwen/Qwen3-8B,Fireworks,0.2,0.2,,,https://docs.fireworks.ai/serverless/pricing,2026-09-25,4B-16B size-tier price (Standard tier)
+Qwen/Qwen3-8B,Alibaba,0.117,0.455,,131072,https://openrouter.ai/qwen/qwen3-8b/providers,2026-09-25,
