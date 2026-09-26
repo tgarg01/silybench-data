@@ -42,7 +42,7 @@
     "bench": {
       "repo": "https://github.com/tgarg01/silybench-bench",
       "tag": "exp-2026-10-qwen3.8-27b-h100",
-      "commit": null,
+      "commit": "3b108345f5a2ae3e89e1fb8595b1480740841ab9",
       "config": "configs/qwen3.8-27b-h100.yaml"
     },
     "environments": [
