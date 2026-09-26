@@ -6,6 +6,7 @@
   "git_commit": "uncommitted-dirty",
   "config_hash": "924e9c824732",
   "sample": false,
+  "experiment": "2026-09-24-qwen3-8b-pipeline",
   "complete": true,
   "hardware": {
     "gpu_type": "H100-80GB",
@@ -37,6 +38,7 @@
   },
   "model": {
     "hf_id": "Qwen/Qwen3-8B",
+    "checkpoint": null,
     "revision": "b968826d9c46dd6066d109eabc6255188de91218",
     "precision": "bf16",
     "max_model_len": 16384,
@@ -65,6 +67,17 @@
     "{\"enable_thinking\": false}"
   ],
   "kv_cache_tokens": 377024,
+  "fingerprint": null,
+  "raw_assets": [
+    {
+      "name": "20260924T222914Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+      "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T222914Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+      "sha256": "0a930000fd27de60c74df6fa2f3a0152bb8e66dfa82627511558b38621eefa66",
+      "bytes": 9808531,
+      "contents": "complete run directory 20260924T222914Z_h100-80gbx1_qwen3-8b_bf16: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+    }
+  ],
+  "profiles": [],
   "merged_from": [],
   "perf": [],
   "capacity": [],

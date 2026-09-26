@@ -1,0 +1,107 @@
+[
+  {
+    "name": "20260924T122817Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T122817Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "sha256": "534bc119886442042ecdeeb54e4aecc8a531209ccae19907fe8b3714821dd3c0",
+    "bytes": 159544,
+    "contents": "complete run directory 20260924T122817Z_h100-80gbx1_qwen3-8b_bf16: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+  },
+  {
+    "name": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T125045Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "sha256": "2793161c033bf357896309c708c747631e8610335124b53401f6b37cf32e12e2",
+    "bytes": 2386018,
+    "contents": "complete run directory 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+  },
+  {
+    "name": "20260924T222914Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T222914Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+    "sha256": "0a930000fd27de60c74df6fa2f3a0152bb8e66dfa82627511558b38621eefa66",
+    "bytes": 9808531,
+    "contents": "complete run directory 20260924T222914Z_h100-80gbx1_qwen3-8b_bf16: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+  },
+  {
+    "name": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8.tar.gz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T225750Z_h100-80gbx1_qwen3-8b_fp8.tar.gz",
+    "sha256": "03e10d23996ff2e4b00bb1a4999703b12a5f53521cfc3f95779ccfeb377e13cc",
+    "bytes": 12088312,
+    "contents": "complete run directory 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+  },
+  {
+    "name": "h100x1_qwen3-8b-20260924T124657Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/h100x1_qwen3-8b-20260924T124657Z.tgz",
+    "sha256": "fce805b4566fece6b0444fde95c819e461056a4553085a4c6593140178e089b1",
+    "bytes": 286701,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 6 private terraform state/vars files removed)"
+  },
+  {
+    "name": "h100x1_qwen3-8b-20260924T222508Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/h100x1_qwen3-8b-20260924T222508Z.tgz",
+    "sha256": "c10d4d703e61ae38e5d56cd6e56ad0478133a70ba0b7c0a2ad355261266a4e01",
+    "bytes": 298054,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 6 private terraform state/vars files removed)"
+  },
+  {
+    "name": "h100x1_qwen3-8b-20260924T225310Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/h100x1_qwen3-8b-20260924T225310Z.tgz",
+    "sha256": "b60e76f0f6ff28d9b60df4ff5e09dbe82fa18d7d4ecb1a1545a8e7100d6088e4",
+    "bytes": 314287,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 6 private terraform state/vars files removed)"
+  },
+  {
+    "name": "h100x1_qwen3-8b-20260924T225329Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/h100x1_qwen3-8b-20260924T225329Z.tgz",
+    "sha256": "d350083ca44db717b4ee63a023ee7788a5fa5b23e47d17b8f128b90c90cdbcd8",
+    "bytes": 314289,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 6 private terraform state/vars files removed)"
+  },
+  {
+    "name": "h100x1_qwen3-8b-20260924T225348Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/h100x1_qwen3-8b-20260924T225348Z.tgz",
+    "sha256": "f2298c008850bfc5f0c16ef1e159fb759f8e7974ece747eb6b7d9935c5f2e2d7",
+    "bytes": 314281,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 6 private terraform state/vars files removed)"
+  },
+  {
+    "name": "smoke-20260924T122303Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/smoke-20260924T122303Z.tgz",
+    "sha256": "f6695c49ef4ca6e3c01c49c44242c4e6bd7dfd9d805b678b06d08c9b7489ec34",
+    "bytes": 282509,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 4 private terraform state/vars files removed)"
+  },
+  {
+    "name": "smoke-20260924T122401Z.tgz",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/smoke-20260924T122401Z.tgz",
+    "sha256": "b0dc223182beeb84a8c2e5d137967d6898f20fef60be3f4c6c6a0aba106f6248",
+    "bytes": 282600,
+    "contents": "exact code bundle that ran on the VM (MANIFEST.sha256 lists every file; 5 private terraform state/vars files removed)"
+  },
+  {
+    "name": "gpubench-h100-1g-20260924T123340Z.log",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/gpubench-h100-1g-20260924T123340Z.log",
+    "sha256": "463f7f682266a9a92ced808314d89891b370cf046e2748eab255882341809eb9",
+    "bytes": 40407,
+    "contents": "VM log"
+  },
+  {
+    "name": "gpubench-h100-1g-20260924T224953Z.log",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/gpubench-h100-1g-20260924T224953Z.log",
+    "sha256": "426b60f6594e0fa7c09ae2168b44528efeb8015c83e4853df3c7f269bfe51ae7",
+    "bytes": 34696,
+    "contents": "VM log"
+  },
+  {
+    "name": "gpubench-h100-1g-20260925T065455Z.log",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/gpubench-h100-1g-20260925T065455Z.log",
+    "sha256": "6fff2f1627d2e2fb374a964d0728e0adcfee105edafc43a947e0d4f9ba5bf155",
+    "bytes": 943764,
+    "contents": "VM log"
+  },
+  {
+    "name": "gpubench-h100-1g-bf16-crashed.log",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/gpubench-h100-1g-bf16-crashed.log",
+    "sha256": "0130b897d9fa582df8ea31421be20e2283953320281ea30f5eb777fdb1ca2b49",
+    "bytes": 957488,
+    "contents": "VM log"
+  }
+]

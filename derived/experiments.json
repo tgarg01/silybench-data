@@ -1,0 +1,65 @@
+[
+  {
+    "id": "2026-09-24-qwen3-8b-pipeline",
+    "title": "Qwen3-8B on 1x H100 SXM (GCP), pipeline validation",
+    "status": "pipeline",
+    "description": "The runs used to build and debug the benchmark pipeline: BF16 performance, an accuracy re-run, and a full FP8 campaign, plus a smoke test. The code ran from uncommitted working trees; the exact code bundles (minus private Terraform state) are in the release.",
+    "bench": {
+      "repo": "https://github.com/tgarg01/silybench-bench",
+      "tag": "pipeline-2026-09-24",
+      "commit": null,
+      "config": "configs/qwen3-8b.yaml"
+    },
+    "environments": [
+      {
+        "provider": "gcp",
+        "machine_type": "a3-highgpu-1g",
+        "zone": "us-central1-a",
+        "provisioning": "spot",
+        "image": "common-cu129-ubuntu-2404-nvidia-580 (image family, resolved at launch)",
+        "runtime": "docker",
+        "terraform_env": "h100-1g"
+      }
+    ],
+    "runs": [
+      "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "20260924T222914Z_h100-80gbx1_qwen3-8b_bf16",
+      "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8"
+    ],
+    "merged_runs": [
+      "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16"
+    ],
+    "release": "pipeline-2026-09-24",
+    "published_at": null,
+    "has_prices_at_run": false
+  },
+  {
+    "id": "2026-10-qwen3.8-27b-h100",
+    "title": "Qwen3.8-27B on 1x H100 SXM 80GB (GCP a3-highgpu-1g Spot)",
+    "status": "planned",
+    "description": "Serving performance of Qwen3.8-27B with vLLM 0.30.0 on one H100 SXM: BF16 (base checkpoint) and FP8 (Qwen's official FP8 checkpoint), six request shapes from short chat to 100k-token tool-calling agent contexts, latency percentiles and the most concurrent users served within the latency target. Performance only; accuracy will be added as a separate run.",
+    "bench": {
+      "repo": "https://github.com/tgarg01/silybench-bench",
+      "tag": "exp-2026-10-qwen3.8-27b-h100",
+      "commit": null,
+      "config": "configs/qwen3.8-27b-h100.yaml"
+    },
+    "environments": [
+      {
+        "provider": "gcp",
+        "machine_type": "a3-highgpu-1g",
+        "zone": "us-central1-a",
+        "provisioning": "spot",
+        "image": "common-cu129-ubuntu-2404-nvidia-580-v20260909",
+        "runtime": "docker",
+        "terraform_env": "h100-1g"
+      }
+    ],
+    "runs": [],
+    "merged_runs": [],
+    "release": "exp-2026-10-qwen3.8-27b-h100",
+    "published_at": null,
+    "has_prices_at_run": false
+  }
+]

@@ -113,6 +113,14 @@
           },
           "title": "Probed",
           "type": "object"
+        },
+        "skipped_levels": {
+          "default": [],
+          "items": {
+            "type": "integer"
+          },
+          "title": "Skipped Levels",
+          "type": "array"
         }
       },
       "required": [
@@ -242,6 +250,18 @@
         "hf_id": {
           "title": "Hf Id",
           "type": "string"
+        },
+        "checkpoint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Checkpoint"
         },
         "revision": {
           "title": "Revision",
@@ -441,6 +461,30 @@
           "default": null,
           "title": "Output Tokens Per Joule"
         },
+        "max_gpu_temp_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Gpu Temp C"
+        },
+        "thermal_throttle_fraction": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Thermal Throttle Fraction"
+        },
         "usd_per_1m_output_tokens": {
           "anyOf": [
             {
@@ -480,6 +524,86 @@
         "slo_pass"
       ],
       "title": "PerfPoint",
+      "type": "object"
+    },
+    "Profile": {
+      "description": "An Nsight profile of one load point. `summary` is tool-specific, small JSON.",
+      "properties": {
+        "tool": {
+          "enum": [
+            "nsys",
+            "ncu"
+          ],
+          "title": "Tool",
+          "type": "string"
+        },
+        "workload": {
+          "title": "Workload",
+          "type": "string"
+        },
+        "concurrency": {
+          "title": "Concurrency",
+          "type": "integer"
+        },
+        "summary": {
+          "additionalProperties": true,
+          "default": {},
+          "title": "Summary",
+          "type": "object"
+        },
+        "asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset"
+        }
+      },
+      "required": [
+        "tool",
+        "workload",
+        "concurrency"
+      ],
+      "title": "Profile",
+      "type": "object"
+    },
+    "RawAsset": {
+      "description": "A published file with everything captured by a run (GitHub release asset).",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "contents": {
+          "title": "Contents",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url",
+        "sha256",
+        "bytes",
+        "contents"
+      ],
+      "title": "RawAsset",
       "type": "object"
     },
     "SLO": {
@@ -602,7 +726,7 @@
   },
   "properties": {
     "schema_version": {
-      "default": 2,
+      "default": 3,
       "title": "Schema Version",
       "type": "integer"
     },
@@ -639,6 +763,18 @@
       "title": "Sample",
       "type": "boolean"
     },
+    "experiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Experiment"
+    },
     "complete": {
       "default": true,
       "title": "Complete",
@@ -674,6 +810,35 @@
       ],
       "default": null,
       "title": "Kv Cache Tokens"
+    },
+    "fingerprint": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Fingerprint"
+    },
+    "raw_assets": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/RawAsset"
+      },
+      "title": "Raw Assets",
+      "type": "array"
+    },
+    "profiles": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Profile"
+      },
+      "title": "Profiles",
+      "type": "array"
     },
     "merged_from": {
       "default": [],

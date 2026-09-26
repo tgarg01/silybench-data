@@ -6,13 +6,24 @@ numbers derived from them. Every number on the site comes from this repo.
 
 | Path | What | Written by |
 |---|---|---|
+| `experiments/<id>/` | One folder per experiment: `experiment.yaml` (exact provider, machine, zone, boot image, runtime, bench tag + commit, config, models, scenarios, run ids), `fingerprint.json` (reference hardware), `assets.json` (release files with sha256), `datasets.yaml`, `prices_at_run/` (GPU + API prices frozen on the experiment day) | maintainers |
 | `runs/<run_id>/result.json` | One benchmark session (one model × precision × machine), schema in `derived/schema.json` | `gpubench submit` (a PR from the GPU box) |
 | `runs/<run_id>/raw.tar.gz` | Raw evidence: per-repeat `vllm bench serve` JSON, 0.5 s GPU telemetry CSVs, vLLM log, lm-eval results and logs | same |
-| `prices/gpu_hourly.yaml` | GPU rental list prices, USD per GPU-hour, with source URL and date | hand-maintained (see CONTRIBUTING) |
-| `prices/api.yaml` | API list prices for the same models, per provider | `scripts/update_api_prices.py` (weekly CI) |
+| **Releases** (`pipeline-2026-09-24`, `exp-<id>`) | Everything else, too big for git: complete run directories incl. per-question accuracy samples, VM logs, the exact code bundles that ran (private Terraform state removed; `MANIFEST.sha256` lists every original file), prompt datasets, and later Nsight reports | `gpubench publish-raw` |
+| `prices/gpu_hourly.yaml` | GPU rental prices, USD per GPU-hour, with source and date. GCP (billing catalog) and Vast refresh automatically; RunPod/Lambda too once their API-key secrets are set | `scripts/update_gpu_prices.py` (CI, every 6 h) + hand-checked rows |
+| `prices/api.yaml` | API list prices for the same models, per provider | `scripts/update_api_prices.py` (CI, every 6 h) |
 | `prices/api_manual.yaml`, `prices/model_map.yaml` | API prices not on OpenRouter; HF id → OpenRouter slug | hand-maintained |
 | `derived/` | **Generated, never edit.** Merged runs, cost model, CSV, SQLite, reproduction guide | CI: `gpubench dataset build` |
 | `BENCH_REF` | Version of [silybench-bench](https://github.com/tgarg01/silybench-bench) used to build `derived/` | maintainers |
+
+## Experiments
+
+| id | status | what |
+|---|---|---|
+| `2026-10-qwen3.8-27b-h100` | planned | Qwen3.8-27B BF16 + FP8 on 1× H100 SXM (GCP a3-highgpu-1g Spot), 6 scenarios incl. 100k-token tool-calling, perf only |
+| `2026-09-24-qwen3-8b-pipeline` | pipeline | Qwen3-8B runs used to build the pipeline, kept with all raw data; not featured |
+
+Only `published` experiments feed the headline comparisons on the site.
 
 ## Use the data
 

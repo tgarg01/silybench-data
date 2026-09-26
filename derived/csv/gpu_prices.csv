@@ -1,12 +1,12 @@
 provider,gpu_type,provisioning,usd_per_gpu_hour,min_gpus,product,source,checked_at,notes
 runpod,H100-80GB,on-demand,2.69,1,"H100 SXM, Community Cloud",https://www.runpod.io/pricing,2026-09-25,
 runpod,H100-80GB,on-demand,3.49,1,"H100 SXM, Secure Cloud",https://www.runpod.io/pricing,2026-09-25,
-vast,H100-80GB,on-demand,3.17,1,"H100 SXM, marketplace median",https://console.vast.ai/api/v0/bundles/,2026-09-25,median of 8 verified rentable 1x offers (lowest $1.98); marketplace prices move daily
+vast,H100-80GB,on-demand,3.4117,1,"H100 SXM, marketplace median",https://console.vast.ai/api/v0/bundles/,2026-09-26,median of 8 verified rentable 1x offers; marketplace prices move daily
 nebius,H100-80GB,on-demand,3.85,1,HGX H100,https://nebius.com/prices,2026-09-25,
 lambda,H100-80GB,on-demand,4.29,1,1x H100 SXM,https://lambda.ai/pricing,2026-09-25,
 lambda,H100-80GB,on-demand,3.99,8,8x H100 SXM,https://lambda.ai/pricing,2026-09-25,
-gcp,H100-80GB,spot,6.57,1,"a3-highgpu-1g Spot, us-central1",https://cloud.google.com/products/compute/pricing/accelerator-optimized,2026-09-24,GPU $5.8632 + 26 vCPU + 234 GiB from the Cloud Billing catalog; boot disk excluded
-gcp,H100-80GB,on-demand,10.92,1,"a3-highgpu-1g, us-central1",https://instances.vantage.sh/gcp/a3-highgpu-1g,2026-09-25,1g/2g/4g shapes are Spot/Flex-start only; on-demand-equivalent list price
+gcp,H100-80GB,spot,6.571,1,"a3-highgpu-1g Spot, us-central1",https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM),2026-09-26,GPU $5.8632 + 26 vCPU + 234 GiB from the Cloud Billing catalog; boot disk excluded
+gcp,H100-80GB,on-demand,10.9791,1,"a3-highgpu-1g, us-central1",https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM),2026-09-26,1g/2g/4g shapes are Spot/Flex-start only; on-demand-equivalent list price
 runpod,H100-PCIe-80GB,on-demand,1.99,1,"H100 PCIe, Community Cloud",https://www.runpod.io/pricing,2026-09-25,
 runpod,H100-PCIe-80GB,on-demand,2.89,1,"H100 PCIe, Secure Cloud",https://www.runpod.io/pricing,2026-09-25,
 lambda,H100-PCIe-80GB,on-demand,3.29,1,1x H100 PCIe,https://lambda.ai/pricing,2026-09-25,

@@ -6,6 +6,7 @@
   "git_commit": "uncommitted-dirty",
   "config_hash": "783cff9882c2",
   "sample": false,
+  "experiment": "2026-09-24-qwen3-8b-pipeline",
   "complete": true,
   "hardware": {
     "gpu_type": "H100-80GB",
@@ -37,6 +38,7 @@
   },
   "model": {
     "hf_id": "Qwen/Qwen3-8B",
+    "checkpoint": null,
     "revision": "b968826d9c46dd6066d109eabc6255188de91218",
     "precision": "bf16",
     "max_model_len": 16384,
@@ -65,6 +67,17 @@
     "{\"enable_thinking\": false}"
   ],
   "kv_cache_tokens": 377024,
+  "fingerprint": null,
+  "raw_assets": [
+    {
+      "name": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+      "url": "https://github.com/tgarg01/silybench-data/releases/download/pipeline-2026-09-24/20260924T125045Z_h100-80gbx1_qwen3-8b_bf16.tar.gz",
+      "sha256": "2793161c033bf357896309c708c747631e8610335124b53401f6b37cf32e12e2",
+      "bytes": 2386018,
+      "contents": "complete run directory 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16: result.json, per-repeat vllm bench JSON, GPU telemetry, vLLM/lm-eval logs, accuracy results and per-question samples"
+    }
+  ],
+  "profiles": [],
   "merged_from": [
     "20260924T222914Z_h100-80gbx1_qwen3-8b_bf16"
   ],
@@ -104,6 +117,8 @@
       "avg_power_w": 428.55583584511965,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.3321973565783061,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 12.81915158475294,
       "slo_pass": true
     },
@@ -142,6 +157,8 @@
       "avg_power_w": 458.5235884773659,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.1043987994198339,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 3.603920982630863,
       "slo_pass": true
     },
@@ -180,6 +197,8 @@
       "avg_power_w": 504.0699834710744,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 3.22400243481563,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.1229920220962635,
       "slo_pass": true
     },
@@ -218,6 +237,8 @@
       "avg_power_w": 573.5459202059201,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.4085810096191125,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.7217650499659,
       "slo_pass": true
     },
@@ -256,6 +277,8 @@
       "avg_power_w": 587.7061397479952,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.789266830108991,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6483859670867206,
       "slo_pass": true
     },
@@ -294,6 +317,8 @@
       "avg_power_w": 603.0963755458512,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.891772304995804,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6186000010101304,
       "slo_pass": false
     },
@@ -332,6 +357,8 @@
       "avg_power_w": 603.7320395421427,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.079532699458692,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5951067609280356,
       "slo_pass": false
     },
@@ -370,6 +397,8 @@
       "avg_power_w": 655.6694889867837,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.281377876362245,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5270243148311967,
       "slo_pass": false
     },
@@ -408,6 +437,8 @@
       "avg_power_w": 688.0268858993524,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.693191347367695,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.4659096210599903,
       "slo_pass": false
     },
@@ -446,6 +477,8 @@
       "avg_power_w": 688.1010644603637,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.640728006669265,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.470192264969388,
       "slo_pass": false
     },
@@ -484,6 +517,8 @@
       "avg_power_w": 689.5746371417939,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.65722552468272,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.46781925935519286,
       "slo_pass": false
     },
@@ -522,6 +557,8 @@
       "avg_power_w": 423.04958333333326,
       "peak_memory_gb": 70.2841796875,
       "output_tokens_per_joule": 0.34349439850053637,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 12.55890970243749,
       "slo_pass": true
     },
@@ -560,6 +597,8 @@
       "avg_power_w": 423.27042857142857,
       "peak_memory_gb": 70.2841796875,
       "output_tokens_per_joule": 1.2950873437869852,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 3.3292459615624805,
       "slo_pass": true
     },
@@ -598,6 +637,8 @@
       "avg_power_w": 436.7475862068964,
       "peak_memory_gb": 70.2841796875,
       "output_tokens_per_joule": 4.93695597443247,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.8463950230541993,
       "slo_pass": true
     },
@@ -636,6 +677,8 @@
       "avg_power_w": 491.53566666666666,
       "peak_memory_gb": 70.2841796875,
       "output_tokens_per_joule": 8.199415387203274,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.4528193153649912,
       "slo_pass": true
     },
@@ -674,6 +717,8 @@
       "avg_power_w": 548.52,
       "peak_memory_gb": 70.2861328125,
       "output_tokens_per_joule": 12.684488719116466,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.2622994831903048,
       "slo_pass": true
     },
@@ -712,6 +757,8 @@
       "avg_power_w": 630.061956521739,
       "peak_memory_gb": 70.2861328125,
       "output_tokens_per_joule": 17.766020520536152,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.16303823003051585,
       "slo_pass": true
     },
@@ -750,6 +797,8 @@
       "avg_power_w": 670.5069333333336,
       "peak_memory_gb": 70.2861328125,
       "output_tokens_per_joule": 19.526521585943915,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13939099235153188,
       "slo_pass": true
     },
@@ -788,6 +837,8 @@
       "avg_power_w": 678.6852592592595,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 21.423077452473212,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.1255199027928924,
       "slo_pass": true
     },
@@ -826,6 +877,8 @@
       "avg_power_w": 429.009179316888,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.33953387766393084,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 12.52890657251319,
       "slo_pass": true
     },
@@ -864,6 +917,8 @@
       "avg_power_w": 425.2225846702318,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.2883896407375564,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 3.3311893670991255,
       "slo_pass": true
     },
@@ -902,6 +957,8 @@
       "avg_power_w": 465.54635193133055,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.546887981595565,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.8621556647085575,
       "slo_pass": true
     },
@@ -940,6 +997,8 @@
       "avg_power_w": 526.2187351778659,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 7.430787746879867,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.4667256896623259,
       "slo_pass": true
     },
@@ -978,6 +1037,8 @@
       "avg_power_w": 614.4157046979865,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 10.736991784715785,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.2766418881328552,
       "slo_pass": true
     },
@@ -1016,6 +1077,8 @@
       "avg_power_w": 689.4892931937172,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 14.939985313585504,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.17716795475402614,
       "slo_pass": true
     },
@@ -1054,6 +1117,8 @@
       "avg_power_w": 689.8689310344822,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.665861014571888,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13451890293519994,
       "slo_pass": true
     },
@@ -1092,6 +1157,8 @@
       "avg_power_w": 681.0913725490198,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.95525919070917,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13427653219403599,
       "slo_pass": true
     },
@@ -1130,6 +1197,8 @@
       "avg_power_w": 680.3059889502761,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.5784869739013,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13701857550081212,
       "slo_pass": true
     },
@@ -1168,6 +1237,8 @@
       "avg_power_w": 681.4924863088723,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.548327239665216,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13699105059443362,
       "slo_pass": true
     },
@@ -1206,6 +1277,8 @@
       "avg_power_w": 680.829457700652,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.568636823506484,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13698214335914277,
       "slo_pass": false
     },
@@ -1244,6 +1317,8 @@
       "avg_power_w": 681.7604805725967,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.15979297310395,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13971409878300634,
       "slo_pass": false
     },
@@ -1282,6 +1357,8 @@
       "avg_power_w": 685.0659519230767,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.31175314259348,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13794589588938028,
       "slo_pass": false
     },
@@ -1320,6 +1397,8 @@
       "avg_power_w": 687.404849527085,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 19.67193657633685,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.13495940707282073,
       "slo_pass": false
     },
@@ -1358,6 +1437,8 @@
       "avg_power_w": 451.158109243697,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.28559586412924387,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 14.163878315378762,
       "slo_pass": true
     },
@@ -1396,6 +1477,8 @@
       "avg_power_w": 499.81167487684695,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.7554999974764797,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 4.8330579796150674,
       "slo_pass": true
     },
@@ -1434,6 +1517,8 @@
       "avg_power_w": 525.6222475570034,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.9542131851386533,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 3.6386787675535466,
       "slo_pass": true
     },
@@ -1472,6 +1557,8 @@
       "avg_power_w": 556.9186991869917,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.123556843077847,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 2.916594278816373,
       "slo_pass": false
     },
@@ -1510,6 +1597,8 @@
       "avg_power_w": 602.6904458598729,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.3007985891368132,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 2.327868827453579,
       "slo_pass": false
     },
@@ -1548,6 +1637,8 @@
       "avg_power_w": 652.1962596899226,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.4588861441540457,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.9180643145715204,
       "slo_pass": false
     },
@@ -1586,6 +1677,8 @@
       "avg_power_w": 665.0893900000001,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.4761707085709388,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.8588582174293544,
       "slo_pass": false
     },
@@ -1624,6 +1717,8 @@
       "avg_power_w": 667.2920738492664,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.4897644442628024,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.8358166213275104,
       "slo_pass": false
     },
@@ -1662,6 +1757,8 @@
       "avg_power_w": 668.4196762771862,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.4872294827304877,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.8358435025477218,
       "slo_pass": false
     },
@@ -1700,6 +1797,8 @@
       "avg_power_w": 669.4342884322687,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.489318418158999,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.8304899771497738,
       "slo_pass": false
     },
@@ -1738,6 +1837,8 @@
       "avg_power_w": 433.90258302583044,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 0.3249493206356799,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 12.943597514999993,
       "slo_pass": true
     },
@@ -1776,6 +1877,8 @@
       "avg_power_w": 429.40291666666656,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 1.2379276442914389,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 3.433227776074208,
       "slo_pass": true
     },
@@ -1814,6 +1917,8 @@
       "avg_power_w": 494.9951428571428,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 3.549215355047676,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 1.0387943518407972,
       "slo_pass": true
     },
@@ -1852,6 +1957,8 @@
       "avg_power_w": 566.0043999999999,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.7652343625035645,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6766417587231347,
       "slo_pass": true
     },
@@ -1890,6 +1997,8 @@
       "avg_power_w": 659.9122352941179,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.314691920693041,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6409540509405484,
       "slo_pass": true
     },
@@ -1928,6 +2037,8 @@
       "avg_power_w": 666.4522549019608,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.5279759427245,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6047692713476543,
       "slo_pass": true
     },
@@ -1966,6 +2077,8 @@
       "avg_power_w": 664.7647663551402,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.55647664251949,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.6025120366299226,
       "slo_pass": false
     },
@@ -2004,6 +2117,8 @@
       "avg_power_w": 670.4115454545456,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.604996381895401,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5911423729807423,
       "slo_pass": false
     },
@@ -2042,6 +2157,8 @@
       "avg_power_w": 679.9888034188033,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.618928251374758,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5810585431803373,
       "slo_pass": false
     },
@@ -2080,6 +2197,8 @@
       "avg_power_w": 684.1039864864865,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 4.894741738643551,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5450181503753666,
       "slo_pass": false
     },
@@ -2118,6 +2237,8 @@
       "avg_power_w": 689.9250367647057,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.243667764899916,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5044589087730411,
       "slo_pass": false
     },
@@ -2156,6 +2277,8 @@
       "avg_power_w": 693.488028673835,
       "peak_memory_gb": 70.5576171875,
       "output_tokens_per_joule": 5.072420999874457,
+      "max_gpu_temp_c": null,
+      "thermal_throttle_fraction": null,
       "usd_per_1m_output_tokens": 0.5188103225311261,
       "slo_pass": false
     }
@@ -2179,7 +2302,8 @@
         "128": true,
         "256": true,
         "512": true
-      }
+      },
+      "skipped_levels": []
     },
     {
       "workload": "prefill-1024-128",
@@ -2203,7 +2327,8 @@
         "128": false,
         "256": false,
         "512": false
-      }
+      },
+      "skipped_levels": []
     },
     {
       "workload": "decode-128-1024",
@@ -2229,7 +2354,8 @@
         "416": false,
         "448": false,
         "512": false
-      }
+      },
+      "skipped_levels": []
     },
     {
       "workload": "balanced-2048-2048",
@@ -2252,7 +2378,8 @@
         "128": false,
         "256": false,
         "512": false
-      }
+      },
+      "skipped_levels": []
     },
     {
       "workload": "longctx-8192-512",
@@ -2274,7 +2401,8 @@
         "128": false,
         "256": false,
         "512": false
-      }
+      },
+      "skipped_levels": []
     }
   ],
   "accuracy": [

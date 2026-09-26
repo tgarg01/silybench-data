@@ -31,12 +31,12 @@
       "provider": "vast",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 3.17,
+      "usd_per_gpu_hour": 3.4117,
       "min_gpus": 1,
       "product": "H100 SXM, marketplace median",
       "source": "https://console.vast.ai/api/v0/bundles/",
-      "checked_at": "2026-09-25",
-      "notes": "median of 8 verified rentable 1x offers (lowest $1.98); marketplace prices move daily"
+      "checked_at": "2026-09-26",
+      "notes": "median of 8 verified rentable 1x offers; marketplace prices move daily"
     },
     {
       "provider": "nebius",
@@ -75,22 +75,22 @@
       "provider": "gcp",
       "gpu_type": "H100-80GB",
       "provisioning": "spot",
-      "usd_per_gpu_hour": 6.57,
+      "usd_per_gpu_hour": 6.571,
       "min_gpus": 1,
       "product": "a3-highgpu-1g Spot, us-central1",
-      "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
-      "checked_at": "2026-09-24",
+      "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+      "checked_at": "2026-09-26",
       "notes": "GPU $5.8632 + 26 vCPU + 234 GiB from the Cloud Billing catalog; boot disk excluded"
     },
     {
       "provider": "gcp",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 10.92,
+      "usd_per_gpu_hour": 10.9791,
       "min_gpus": 1,
       "product": "a3-highgpu-1g, us-central1",
-      "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-      "checked_at": "2026-09-25",
+      "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+      "checked_at": "2026-09-26",
       "notes": "1g/2g/4g shapes are Spot/Flex-start only; on-demand-equivalent list price"
     },
     {
@@ -389,7 +389,7 @@
       "quantization": "int4",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-25",
+      "fetched_at": "2026-09-26",
       "notes": null
     },
     {
@@ -400,7 +400,7 @@
       "quantization": "fp8",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-25",
+      "fetched_at": "2026-09-26",
       "notes": null
     },
     {
@@ -411,7 +411,7 @@
       "quantization": null,
       "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-25",
+      "fetched_at": "2026-09-26",
       "notes": null
     },
     {
@@ -433,13 +433,190 @@
       "quantization": null,
       "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3-8b/providers",
-      "fetched_at": "2026-09-25",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Darkbloom",
+      "usd_per_1m_input": 0.1,
+      "usd_per_1m_output": 1.8,
+      "quantization": "fp4",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "DeepInfra",
+      "usd_per_1m_input": 0.15,
+      "usd_per_1m_output": 1.875,
+      "quantization": "bf16",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Phala",
+      "usd_per_1m_input": 0.1992,
+      "usd_per_1m_output": 2.075,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "AkashML",
+      "usd_per_1m_input": 0.25,
+      "usd_per_1m_output": 2.2,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Chutes",
+      "usd_per_1m_input": 0.24,
+      "usd_per_1m_output": 2.2,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Parasail",
+      "usd_per_1m_input": 0.24,
+      "usd_per_1m_output": 2.2,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Mancer 2",
+      "usd_per_1m_input": 0.2,
+      "usd_per_1m_output": 2.5,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Alibaba",
+      "usd_per_1m_input": 0.425,
+      "usd_per_1m_output": 2.55,
+      "quantization": null,
+      "context_length": 1000000,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Ionstream",
+      "usd_per_1m_input": 0.105,
+      "usd_per_1m_output": 2.55,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "CoreWeave",
+      "usd_per_1m_input": 0.4,
+      "usd_per_1m_output": 3.0,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Novita",
+      "usd_per_1m_input": 0.42,
+      "usd_per_1m_output": 3.0,
+      "quantization": null,
+      "context_length": 1000000,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Cloudflare",
+      "usd_per_1m_input": 0.45,
+      "usd_per_1m_output": 3.2,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Venice",
+      "usd_per_1m_input": 0.45,
+      "usd_per_1m_output": 3.2,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "DekaLLM",
+      "usd_per_1m_input": 0.096,
+      "usd_per_1m_output": 4.4,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Reka",
+      "usd_per_1m_input": 0.09,
+      "usd_per_1m_output": 4.4,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Wafer",
+      "usd_per_1m_input": 0.091,
+      "usd_per_1m_output": 4.4,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-09-26",
       "notes": null
     }
   ],
   "deployments": [
     {
       "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "fp8",
       "gpu_type": "H100-80GB",
@@ -486,12 +663,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.21325980277725273,
-          "usd_per_1m_total_tokens": 0.023695533641916965,
-          "usd_per_1k_requests": 0.02729725475548835
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.22952002180919656,
+          "usd_per_1m_total_tokens": 0.025502224645466285,
+          "usd_per_1k_requests": 0.029378562791577162
         },
         {
           "provider": "runpod",
@@ -532,9 +709,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.44199271427335973,
@@ -543,20 +721,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.44205998865909385,
+          "usd_per_1m_total_tokens": 0.0491177765176771,
+          "usd_per_1k_requests": 0.05658367854836401
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.7346362922169084,
-          "usd_per_1m_total_tokens": 0.0816262546907676,
-          "usd_per_1k_requests": 0.09403344540376427
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.7386122084137967,
+          "usd_per_1m_total_tokens": 0.08206802315708853,
+          "usd_per_1k_requests": 0.09454236267696597
         }
       ]
     },
     {
       "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "fp8",
       "gpu_type": "H100-80GB",
@@ -603,12 +794,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.05830150825925318,
-          "usd_per_1m_total_tokens": 0.051823562897113935,
-          "usd_per_1k_requests": 0.05970074445747526
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.06274676836848395,
+          "usd_per_1m_total_tokens": 0.055774905216430165,
+          "usd_per_1k_requests": 0.06425269080932755
         },
         {
           "provider": "runpod",
@@ -649,9 +840,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.12083309440482443,
@@ -660,20 +852,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.1208514860478084,
+          "usd_per_1m_total_tokens": 0.10742354315360746,
+          "usd_per_1k_requests": 0.1237519217129558
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.2008367413851876,
-          "usd_per_1m_total_tokens": 0.17852154789794453,
-          "usd_per_1k_requests": 0.2056568231784321
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.20192368748554154,
+          "usd_per_1m_total_tokens": 0.17948772220937026,
+          "usd_per_1k_requests": 0.20676985598519454
         }
       ]
     },
     {
       "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "fp8",
       "gpu_type": "H100-80GB",
@@ -720,12 +925,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.24104342397533385,
-          "usd_per_1m_total_tokens": 0.12052171198766692,
-          "usd_per_1k_requests": 0.4936569323014837
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.2594220345667655,
+          "usd_per_1m_total_tokens": 0.12971101728338275,
+          "usd_per_1k_requests": 0.5312963267927356
         },
         {
           "provider": "runpod",
@@ -766,9 +971,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.4995758030025058,
@@ -777,20 +983,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.4996518419375137,
+          "usd_per_1m_total_tokens": 0.24982592096875686,
+          "usd_per_1k_requests": 1.023286972288028
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.8303451702872698,
-          "usd_per_1m_total_tokens": 0.4151725851436349,
-          "usd_per_1k_requests": 1.7005469087483285
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.8348390713462422,
+          "usd_per_1m_total_tokens": 0.4174195356731211,
+          "usd_per_1k_requests": 1.7097504181171042
         }
       ]
     },
     {
       "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "fp8",
       "gpu_type": "H100-80GB",
@@ -837,12 +1056,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 1.1190481485559816,
-          "usd_per_1m_total_tokens": 0.06582636167976363,
-          "usd_per_1k_requests": 0.5729526520606626
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 1.2043711572329472,
+          "usd_per_1m_total_tokens": 0.07084536219017336,
+          "usd_per_1k_requests": 0.616638032503269
         },
         {
           "provider": "runpod",
@@ -883,9 +1102,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 2.319289064988265,
@@ -894,20 +1114,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 2.3196420770225092,
+          "usd_per_1m_total_tokens": 0.13644953394250056,
+          "usd_per_1k_requests": 1.1876567434355247
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 3.854891413953098,
-          "usd_per_1m_total_tokens": 0.22675831846782926,
-          "usd_per_1k_requests": 1.9737044039439862
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 3.875754425176965,
+          "usd_per_1m_total_tokens": 0.2279855544221744,
+          "usd_per_1k_requests": 1.9843862656906062
         }
       ]
     },
     {
       "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "fp8",
       "gpu_type": "H100-80GB",
@@ -954,12 +1187,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.053231653474621166,
-          "usd_per_1m_total_tokens": 0.026615826737310583,
-          "usd_per_1k_requests": 0.006813651644751509
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.05729035714806468,
+          "usd_per_1m_total_tokens": 0.02864517857403234,
+          "usd_per_1k_requests": 0.007333165714952279
         },
         {
           "provider": "runpod",
@@ -1000,9 +1233,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.11032554048210129,
@@ -1011,20 +1245,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.11034233280180936,
+          "usd_per_1m_total_tokens": 0.05517116640090468,
+          "usd_per_1k_requests": 0.014123818598631597
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.18337213121225965,
-          "usd_per_1m_total_tokens": 0.09168606560612982,
-          "usd_per_1k_requests": 0.023471632795169235
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.18436455730700735,
+          "usd_per_1m_total_tokens": 0.09218227865350367,
+          "usd_per_1k_requests": 0.023598663335296942
         }
       ]
     },
     {
       "run_id": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "bf16",
       "gpu_type": "H100-80GB",
@@ -1071,12 +1318,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.0605628754723697,
-          "usd_per_1m_total_tokens": 0.03028143773618485,
-          "usd_per_1k_requests": 0.007752048060463322
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.06518055591453746,
+          "usd_per_1m_total_tokens": 0.03259027795726873,
+          "usd_per_1k_requests": 0.008343111157060795
         },
         {
           "provider": "runpod",
@@ -1117,9 +1364,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.1255199027928924,
@@ -1128,20 +1376,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.12553900780092786,
+          "usd_per_1m_total_tokens": 0.06276950390046393,
+          "usd_per_1k_requests": 0.016068992998518765
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.2086266877470906,
-          "usd_per_1m_total_tokens": 0.1043133438735453,
-          "usd_per_1k_requests": 0.026704216031627596
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.20975579372198558,
+          "usd_per_1m_total_tokens": 0.10487789686099279,
+          "usd_per_1k_requests": 0.026848741596414157
         }
       ]
     },
     {
       "run_id": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "bf16",
       "gpu_type": "H100-80GB",
@@ -1188,12 +1449,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.29179887217230804,
-          "usd_per_1m_total_tokens": 0.03242209690803422,
-          "usd_per_1k_requests": 0.03735025563805543
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.314047385548979,
+          "usd_per_1m_total_tokens": 0.034894153949886555,
+          "usd_per_1k_requests": 0.040198065350269305
         },
         {
           "provider": "runpod",
@@ -1234,9 +1495,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.6047692713476542,
@@ -1245,20 +1507,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.6048613214650587,
+          "usd_per_1m_total_tokens": 0.06720681349611764,
+          "usd_per_1k_requests": 0.07742224914752752
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 1.0051872820572882,
-          "usd_per_1m_total_tokens": 0.11168747578414313,
-          "usd_per_1k_requests": 0.12866397210333289
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 1.010627443995895,
+          "usd_per_1m_total_tokens": 0.11229193822176613,
+          "usd_per_1k_requests": 0.1293603128314746
         }
       ]
     },
     {
       "run_id": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "bf16",
       "gpu_type": "H100-80GB",
@@ -1305,12 +1580,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.06609766063688806,
-          "usd_per_1m_total_tokens": 0.05875347612167828,
-          "usd_per_1k_requests": 0.06768400449217336
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.0711373466229877,
+          "usd_per_1m_total_tokens": 0.06323319699821128,
+          "usd_per_1k_requests": 0.0728446429419394
         },
         {
           "provider": "runpod",
@@ -1351,9 +1626,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.13699105059443362,
@@ -1362,20 +1638,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.13701190159147994,
+          "usd_per_1m_total_tokens": 0.1217883569702044,
+          "usd_per_1k_requests": 0.14030018722967547
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 0.22769288774599925,
-          "usd_per_1m_total_tokens": 0.20239367799644378,
-          "usd_per_1k_requests": 0.2331575170519032
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 0.2289251816714378,
+          "usd_per_1m_total_tokens": 0.20348905037461137,
+          "usd_per_1k_requests": 0.2344193860315523
         }
       ]
     },
     {
       "run_id": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "bf16",
       "gpu_type": "H100-80GB",
@@ -1422,12 +1711,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 0.31284376189724566,
-          "usd_per_1m_total_tokens": 0.15642188094862283,
-          "usd_per_1k_requests": 0.6407040243655592
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 0.33669686513086217,
+          "usd_per_1m_total_tokens": 0.16834843256543108,
+          "usd_per_1k_requests": 0.6895551797880056
         },
         {
           "provider": "runpod",
@@ -1468,9 +1757,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 0.6483859670867206,
@@ -1479,20 +1769,33 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 0.6484846559705998,
+          "usd_per_1m_total_tokens": 0.3242423279852999,
+          "usd_per_1k_requests": 1.3280965754277883
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 1.0776826119614897,
-          "usd_per_1m_total_tokens": 0.5388413059807449,
-          "usd_per_1k_requests": 2.207093989297131
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 1.083515124998754,
+          "usd_per_1m_total_tokens": 0.541757562499377,
+          "usd_per_1k_requests": 2.219038975997448
         }
       ]
     },
     {
       "run_id": "20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
+      "experiment": "2026-09-24-qwen3-8b-pipeline",
       "model": "Qwen/Qwen3-8B",
       "precision": "bf16",
       "gpu_type": "H100-80GB",
@@ -1539,12 +1842,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 3.17,
-          "usd_per_month": 2314.1,
-          "usd_per_1m_output_tokens": 1.7556486595349685,
-          "usd_per_1m_total_tokens": 0.1032734505608805,
-          "usd_per_1k_requests": 0.8988921136819038
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 3.4117,
+          "usd_per_month": 2490.54,
+          "usd_per_1m_output_tokens": 1.889509946919701,
+          "usd_per_1m_total_tokens": 0.111147643936453,
+          "usd_per_1k_requests": 0.9674290928228869
         },
         {
           "provider": "runpod",
@@ -1585,9 +1888,10 @@
         {
           "provider": "gcp",
           "provisioning": "spot",
-          "product": "a3-highgpu-1g Spot, us-central1",
-          "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+          "product": "a3-highgpu-1g",
+          "source": "run 20260924T125045Z_h100-80gbx1_qwen3-8b_bf16",
           "checked_at": "2026-09-24",
+          "measured": true,
           "usd_per_hour": 6.57,
           "usd_per_month": 4796.1,
           "usd_per_1m_output_tokens": 3.638678767553546,
@@ -1596,15 +1900,27 @@
         },
         {
           "provider": "gcp",
+          "provisioning": "spot",
+          "product": "a3-highgpu-1g Spot, us-central1",
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 6.571,
+          "usd_per_month": 4796.83,
+          "usd_per_1m_output_tokens": 3.6392325999382575,
+          "usd_per_1m_total_tokens": 0.21407250587872104,
+          "usd_per_1k_requests": 1.8632870911683879
+        },
+        {
+          "provider": "gcp",
           "provisioning": "on-demand",
           "product": "a3-highgpu-1g, us-central1",
-          "source": "https://instances.vantage.sh/gcp/a3-highgpu-1g",
-          "checked_at": "2026-09-25",
-          "usd_per_hour": 10.92,
-          "usd_per_month": 7971.6,
-          "usd_per_1m_output_tokens": 6.047849641047904,
-          "usd_per_1m_total_tokens": 0.355755861238112,
-          "usd_per_1k_requests": 3.096499016216527
+          "source": "https://cloud.google.com/billing/v1/how-tos/catalog-api (Compute Engine SKUs: GPU + vCPU + RAM)",
+          "checked_at": "2026-09-26",
+          "usd_per_hour": 10.9791,
+          "usd_per_month": 8014.74,
+          "usd_per_1m_output_tokens": 6.080581134984345,
+          "usd_per_1m_total_tokens": 0.3576812432343732,
+          "usd_per_1k_requests": 3.1132575411119845
         }
       ]
     }
@@ -1701,166 +2017,10 @@
       "usd_per_1k_requests": 0.178048
     }
   ],
-  "comparisons": [
-    {
-      "model": "Qwen/Qwen3-8B",
-      "workload": "balanced-2048-2048",
-      "input_len": 2048,
-      "output_len": 2048,
-      "hosted": {
-        "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
-        "precision": "fp8",
-        "gpu_type": "H100-80GB",
-        "gpu_count": 1,
-        "provider": "runpod",
-        "provisioning": "on-demand",
-        "usd_per_hour": 2.69,
-        "usd_per_1k_requests": 0.4189076176312275,
-        "usd_per_1m_output_tokens": 0.20454473517149782,
-        "max_users_slo": 52,
-        "requests_per_day_at_capacity": 154115.1253468812
-      },
-      "api_cheapest": {
-        "model": "Qwen/Qwen3-8B",
-        "workload": "balanced-2048-2048",
-        "provider": "Fireworks",
-        "quantization": null,
-        "usd_per_1m_input": 0.2,
-        "usd_per_1m_output": 0.2,
-        "usd_per_1k_requests": 0.8192
-      },
-      "api_median_usd_per_1k_requests": 0.9953280000000002,
-      "breakeven_requests_per_day": 78808.59375,
-      "breakeven_utilization": 0.5113618379287445,
-      "savings_at_capacity": 0.48863816207125554
-    },
-    {
-      "model": "Qwen/Qwen3-8B",
-      "workload": "chat-128-128",
-      "input_len": 128,
-      "output_len": 128,
-      "hosted": {
-        "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
-        "precision": "fp8",
-        "gpu_type": "H100-80GB",
-        "gpu_count": 1,
-        "provider": "runpod",
-        "provisioning": "on-demand",
-        "usd_per_hour": 2.69,
-        "usd_per_1k_requests": 0.0057819315218869275,
-        "usd_per_1m_output_tokens": 0.04517134001474162,
-        "max_users_slo": 512,
-        "requests_per_day_at_capacity": 11165818.854065381
-      },
-      "api_cheapest": {
-        "model": "Qwen/Qwen3-8B",
-        "workload": "chat-128-128",
-        "provider": "Fireworks",
-        "quantization": null,
-        "usd_per_1m_input": 0.2,
-        "usd_per_1m_output": 0.2,
-        "usd_per_1k_requests": 0.0512
-      },
-      "api_median_usd_per_1k_requests": 0.06220800000000001,
-      "breakeven_requests_per_day": 1260937.5,
-      "breakeven_utilization": 0.11292835003685406,
-      "savings_at_capacity": 0.8870716499631459
-    },
-    {
-      "model": "Qwen/Qwen3-8B",
-      "workload": "decode-128-1024",
-      "input_len": 128,
-      "output_len": 1024,
-      "hosted": {
-        "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
-        "precision": "fp8",
-        "gpu_type": "H100-80GB",
-        "gpu_count": 1,
-        "provider": "runpod",
-        "provisioning": "on-demand",
-        "usd_per_hour": 2.69,
-        "usd_per_1k_requests": 0.050660884097983735,
-        "usd_per_1m_output_tokens": 0.049473519626937246,
-        "max_users_slo": 472,
-        "requests_per_day_at_capacity": 1274355.9681101071
-      },
-      "api_cheapest": {
-        "model": "Qwen/Qwen3-8B",
-        "workload": "decode-128-1024",
-        "provider": "Fireworks",
-        "quantization": null,
-        "usd_per_1m_input": 0.2,
-        "usd_per_1m_output": 0.2,
-        "usd_per_1k_requests": 0.23040000000000002
-      },
-      "api_median_usd_per_1k_requests": 0.355648,
-      "breakeven_requests_per_day": 280208.3333333333,
-      "breakeven_utilization": 0.21988230945305443,
-      "savings_at_capacity": 0.7801176905469456
-    },
-    {
-      "model": "Qwen/Qwen3-8B",
-      "workload": "longctx-8192-512",
-      "input_len": 8192,
-      "output_len": 512,
-      "hosted": {
-        "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
-        "precision": "fp8",
-        "gpu_type": "H100-80GB",
-        "gpu_count": 1,
-        "provider": "runpod",
-        "provisioning": "on-demand",
-        "usd_per_hour": 2.69,
-        "usd_per_1k_requests": 0.4861964145246632,
-        "usd_per_1m_output_tokens": 0.9496023721184829,
-        "max_users_slo": 10,
-        "requests_per_day_at_capacity": 132785.84142402202
-      },
-      "api_cheapest": {
-        "model": "Qwen/Qwen3-8B",
-        "workload": "longctx-8192-512",
-        "provider": "Alibaba",
-        "quantization": null,
-        "usd_per_1m_input": 0.117,
-        "usd_per_1m_output": 0.455,
-        "usd_per_1k_requests": 1.191424
-      },
-      "api_median_usd_per_1k_requests": 1.4661120000000003,
-      "breakeven_requests_per_day": 54187.25827245381,
-      "breakeven_utilization": 0.4080800911553429,
-      "savings_at_capacity": 0.5919199088446572
-    },
-    {
-      "model": "Qwen/Qwen3-8B",
-      "workload": "prefill-1024-128",
-      "input_len": 1024,
-      "output_len": 128,
-      "hosted": {
-        "run_id": "20260924T225750Z_h100-80gbx1_qwen3-8b_fp8",
-        "precision": "fp8",
-        "gpu_type": "H100-80GB",
-        "gpu_count": 1,
-        "provider": "runpod",
-        "provisioning": "on-demand",
-        "usd_per_hour": 2.69,
-        "usd_per_1k_requests": 0.023163916495982227,
-        "usd_per_1m_output_tokens": 0.18096809762486116,
-        "max_users_slo": 108,
-        "requests_per_day_at_capacity": 2787093.452490986
-      },
-      "api_cheapest": {
-        "model": "Qwen/Qwen3-8B",
-        "workload": "prefill-1024-128",
-        "provider": "Alibaba",
-        "quantization": null,
-        "usd_per_1m_input": 0.117,
-        "usd_per_1m_output": 0.455,
-        "usd_per_1k_requests": 0.178048
-      },
-      "api_median_usd_per_1k_requests": 0.20422400000000002,
-      "breakeven_requests_per_day": 362598.84974838246,
-      "breakeven_utilization": 0.13009927938523447,
-      "savings_at_capacity": 0.8699007206147655
-    }
-  ]
+  "comparisons": [],
+  "openrouter_slugs": {
+    "Qwen/Qwen3-8B": "qwen/qwen3-8b",
+    "Qwen/Qwen3-14B": "qwen/qwen3-14b",
+    "Qwen/Qwen3.8-27B": "qwen/qwen3.8-27b"
+  }
 }

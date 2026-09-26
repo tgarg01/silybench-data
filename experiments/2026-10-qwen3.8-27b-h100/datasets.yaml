@@ -1,0 +1,12 @@
+- name: toolcall-100k.jsonl
+  scenario: toolcall-100k-512
+  description: >-
+    200 real tool-calling agent contexts of exactly 100,000 tokens (Qwen3.8 tokenizer and chat
+    template). Built from SWE-agent sessions (the agent fixes GitHub issues through shell and
+    editor commands): commands became run_command tool calls, their outputs tool results;
+    sessions from the same repository were chained and the middle trimmed to the exact length.
+  source: https://huggingface.co/datasets/nebius/SWE-agent-trajectories
+  license: CC-BY-4.0
+  builder: gpubench prompts make-toolcall --model Qwen/Qwen3.8-27B --tokens 100000 --count 200 --shards 4 --seed 42
+  url: https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k.jsonl
+  sha256: c35ce2d6c4eb9c5bffe80544042d0555dd0d8293924baffe6de142f09531083b

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "toolcall-100k.jsonl",
+    "url": "https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k.jsonl",
+    "sha256": "c35ce2d6c4eb9c5bffe80544042d0555dd0d8293924baffe6de142f09531083b",
+    "bytes": 74175683,
+    "contents": "prompt dataset"
+  }
+]

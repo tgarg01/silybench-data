@@ -38,7 +38,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "decode-128-1024",
@@ -64,7 +65,8 @@
           "476": false,
           "480": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "balanced-2048-2048",
@@ -87,7 +89,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "longctx-8192-512",
@@ -109,7 +112,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "chat-128-128",
@@ -129,7 +133,8 @@
           "128": true,
           "256": true,
           "512": true
-        }
+        },
+        "skipped_levels": []
       }
     ],
     "accuracy": [
@@ -225,7 +230,8 @@
           "128": true,
           "256": true,
           "512": true
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "prefill-1024-128",
@@ -249,7 +255,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "decode-128-1024",
@@ -275,7 +282,8 @@
           "416": false,
           "448": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "balanced-2048-2048",
@@ -298,7 +306,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       },
       {
         "workload": "longctx-8192-512",
@@ -320,7 +329,8 @@
           "128": false,
           "256": false,
           "512": false
-        }
+        },
+        "skipped_levels": []
       }
     ],
     "accuracy": [
