@@ -572,6 +572,75 @@
       "title": "Profile",
       "type": "object"
     },
+    "QualityResult": {
+      "properties": {
+        "workload": {
+          "title": "Workload",
+          "type": "string"
+        },
+        "dataset_sha256": {
+          "title": "Dataset Sha256",
+          "type": "string"
+        },
+        "responses": {
+          "title": "Responses",
+          "type": "string"
+        },
+        "recall_n": {
+          "default": 0,
+          "title": "Recall N",
+          "type": "integer"
+        },
+        "recall_accuracy": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recall Accuracy"
+        },
+        "recall_exact": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recall Exact"
+        },
+        "drift_n": {
+          "default": 0,
+          "title": "Drift N",
+          "type": "integer"
+        },
+        "drift_tool_call_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Drift Tool Call Rate"
+        }
+      },
+      "required": [
+        "workload",
+        "dataset_sha256",
+        "responses"
+      ],
+      "title": "QualityResult",
+      "type": "object"
+    },
     "RawAsset": {
       "description": "A published file with everything captured by a run (GitHub release asset).",
       "properties": {
@@ -664,7 +733,8 @@
             {
               "enum": [
                 "docker",
-                "native"
+                "native",
+                "mock"
               ],
               "type": "string"
             },
@@ -838,6 +908,14 @@
         "$ref": "#/$defs/Profile"
       },
       "title": "Profiles",
+      "type": "array"
+    },
+    "quality": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/QualityResult"
+      },
+      "title": "Quality",
       "type": "array"
     },
     "merged_from": {

@@ -2,7 +2,7 @@
   "id": "2026-10-qwen3.8-27b-h100",
   "title": "Qwen3.8-27B on 1x H100 SXM 80GB (GCP a3-highgpu-1g Spot)",
   "status": "planned",
-  "description": "Serving performance of Qwen3.8-27B with vLLM 0.30.0 on one H100 SXM: BF16 (base checkpoint) and FP8 (Qwen's official FP8 checkpoint), six request shapes from short chat to 100k-token tool-calling agent contexts, latency percentiles and the most concurrent users served within the latency target. Performance only; accuracy will be added as a separate run.",
+  "description": "Serving performance of Qwen3.8-27B with vLLM 0.30.0 on one H100 SXM: BF16 (base checkpoint) and FP8 (Qwen's official FP8 checkpoint), six request shapes from short chat to 100k-token tool-calling agent contexts, latency percentiles and the most concurrent users served within the latency target. Performance only, plus a correctness suite for the 100k tool-calling scenario (long-context recall + a drift baseline); standard accuracy tests come later.",
   "bench": {
     "repo": "https://github.com/tgarg01/silybench-bench",
     "tag": "exp-2026-10-qwen3.8-27b-h100",
@@ -39,6 +39,24 @@
   ],
   "scenarios": [
     {
+      "name": "toolcall-100k-512",
+      "input_len": 100000,
+      "output_len": 512,
+      "dataset": "custom",
+      "users": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "repeats": 3,
+      "slo": {
+        "ttft_p99_ms": 30000.0,
+        "itl_median_ms": 50.0
+      },
+      "quality": true
+    },
+    {
       "name": "chat-128-128",
       "input_len": 128,
       "output_len": 128,
@@ -57,7 +75,8 @@
       "slo": {
         "ttft_p99_ms": 2000.0,
         "itl_median_ms": 50.0
-      }
+      },
+      "quality": false
     },
     {
       "name": "prefill-1024-128",
@@ -78,7 +97,8 @@
       "slo": {
         "ttft_p99_ms": 2000.0,
         "itl_median_ms": 50.0
-      }
+      },
+      "quality": false
     },
     {
       "name": "decode-128-1024",
@@ -99,7 +119,8 @@
       "slo": {
         "ttft_p99_ms": 2000.0,
         "itl_median_ms": 50.0
-      }
+      },
+      "quality": false
     },
     {
       "name": "balanced-2048-2048",
@@ -120,7 +141,8 @@
       "slo": {
         "ttft_p99_ms": 2000.0,
         "itl_median_ms": 50.0
-      }
+      },
+      "quality": false
     },
     {
       "name": "longctx-8192-512",
@@ -141,25 +163,13 @@
       "slo": {
         "ttft_p99_ms": 2000.0,
         "itl_median_ms": 50.0
-      }
-    },
-    {
-      "name": "toolcall-100k-512",
-      "input_len": 100000,
-      "output_len": 512,
-      "dataset": "custom",
-      "users": [
-        1,
-        2,
-        4,
-        8
-      ],
-      "repeats": 3,
-      "slo": {
-        "ttft_p99_ms": 30000.0,
-        "itl_median_ms": 50.0
-      }
+      },
+      "quality": false
     }
+  ],
+  "phases": [
+    "--workload toolcall-100k-512",
+    "--skip-workload toolcall-100k-512"
   ],
   "fingerprint": null,
   "assets": [
@@ -168,6 +178,13 @@
       "url": "https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k.jsonl",
       "sha256": "c35ce2d6c4eb9c5bffe80544042d0555dd0d8293924baffe6de142f09531083b",
       "bytes": 74175683,
+      "contents": "prompt dataset"
+    },
+    {
+      "name": "toolcall-100k-quality.jsonl",
+      "url": "https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k-quality.jsonl",
+      "sha256": "2cf0a857ef5f9f37a5430dc683e4853a14084c308322620b8401ad3e62e7df3f",
+      "bytes": 74436800,
       "contents": "prompt dataset"
     }
   ],
@@ -181,6 +198,17 @@
       "builder": "gpubench prompts make-toolcall --model Qwen/Qwen3.8-27B --tokens 100000 --count 200 --shards 4 --seed 42",
       "url": "https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k.jsonl",
       "sha256": "c35ce2d6c4eb9c5bffe80544042d0555dd0d8293924baffe6de142f09531083b"
+    },
+    {
+      "name": "toolcall-100k-quality.jsonl",
+      "scenario": "toolcall-100k-512",
+      "kind": "quality",
+      "description": "Correctness suite from the same agent contexts, rendered with thinking off. 100 recall questions (\"What was the first line of the output of the command X?\") about tool outputs 20-80% deep in the 100k context, each answer present exactly once, scored by exact match; and 100 drift prompts at the agent's next decision point (greedy, top-20 logprobs), the baseline an optimized build is compared with (gpubench quality compare).",
+      "source": "https://huggingface.co/datasets/nebius/SWE-agent-trajectories",
+      "license": "CC-BY-4.0",
+      "builder": "gpubench quality make --model Qwen/Qwen3.8-27B --tokens 100000 --count 100 --shards 4 --seed 42",
+      "url": "https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k-quality.jsonl",
+      "sha256": "2cf0a857ef5f9f37a5430dc683e4853a14084c308322620b8401ad3e62e7df3f"
     }
   ],
   "has_prices_at_run": false,

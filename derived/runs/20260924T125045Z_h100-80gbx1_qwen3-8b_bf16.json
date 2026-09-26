@@ -78,6 +78,7 @@
     }
   ],
   "profiles": [],
+  "quality": [],
   "merged_from": [
     "20260924T222914Z_h100-80gbx1_qwen3-8b_bf16"
   ],

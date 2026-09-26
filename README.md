@@ -20,7 +20,7 @@ numbers derived from them. Every number on the site comes from this repo.
 
 | id | status | what |
 |---|---|---|
-| `2026-10-qwen3.8-27b-h100` | planned | Qwen3.8-27B BF16 + FP8 on 1× H100 SXM (GCP a3-highgpu-1g Spot), 6 scenarios incl. 100k-token tool-calling, perf only |
+| `2026-10-qwen3.8-27b-h100` | planned | Qwen3.8-27B BF16 + FP8 on 1× H100 SXM (GCP a3-highgpu-1g Spot), 6 scenarios incl. 100k-token tool-calling (run first, with its recall + drift quality suite), perf only |
 | `2026-09-24-qwen3-8b-pipeline` | pipeline | Qwen3-8B runs used to build the pipeline, kept with all raw data; not featured |
 
 Only `published` experiments feed the headline comparisons on the site.
