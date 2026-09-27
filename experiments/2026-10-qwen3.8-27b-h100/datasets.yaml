@@ -24,3 +24,16 @@
   builder: gpubench quality make --model Qwen/Qwen3.8-27B --tokens 100000 --count 100 --shards 4 --seed 42
   url: https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/toolcall-100k-quality.jsonl
   sha256: 2cf0a857ef5f9f37a5430dc683e4853a14084c308322620b8401ad3e62e7df3f
+- name: agent-sessions-100k.jsonl
+  scenario: agent-sessions-100k
+  description: >-
+    24 multi-turn agent sessions from the same 100k-token contexts, 10 turns each. Turn j is the
+    conversation up to one of its last 10 tool results, so each turn resends the previous turn's
+    prompt plus the agent's next call and its tool output (median 684 new tokens) and sessions
+    grow from ~93k to exactly 100k tokens. Every turn is an exact text prefix of the next, which
+    is what a prefix cache can reuse.
+  source: https://huggingface.co/datasets/nebius/SWE-agent-trajectories
+  license: CC-BY-4.0
+  builder: gpubench prompts make-sessions --model Qwen/Qwen3.8-27B --tokens 100000 --count 24 --turns 10 --shards 4 --seed 42
+  url: https://github.com/tgarg01/silybench-data/releases/download/exp-2026-10-qwen3.8-27b-h100/agent-sessions-100k.jsonl
+  sha256: ed29e1657c610246a83d1f5ffa043eec4c42121c9104ce59b6c38d4bdae14f43
