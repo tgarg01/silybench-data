@@ -104,6 +104,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-27'
 - model: Qwen/Qwen3.8-27B
+  provider: DekaLLM
+  usd_per_1m_input: 0.08
+  usd_per_1m_output: 2.5
+  quantization: null
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-09-27'
+- model: Qwen/Qwen3.8-27B
   provider: Mancer 2
   usd_per_1m_input: 0.2
   usd_per_1m_output: 2.5
@@ -113,7 +121,7 @@ offers:
   fetched_at: '2026-09-27'
 - model: Qwen/Qwen3.8-27B
   provider: Reka
-  usd_per_1m_input: 0.0802
+  usd_per_1m_input: 0.079
   usd_per_1m_output: 2.5
   quantization: null
   context_length: 262144
@@ -164,14 +172,6 @@ offers:
   usd_per_1m_input: 0.45
   usd_per_1m_output: 3.2
   quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-09-27'
-- model: Qwen/Qwen3.8-27B
-  provider: DekaLLM
-  usd_per_1m_input: 0.096
-  usd_per_1m_output: 4.4
-  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-27'
