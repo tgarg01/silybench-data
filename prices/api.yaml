@@ -56,18 +56,18 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-28'
 - model: Qwen/Qwen3.8-27B
-  provider: Phala
-  usd_per_1m_input: 0.1992
-  usd_per_1m_output: 2.075
-  quantization: null
+  provider: AkashML
+  usd_per_1m_input: 0.225
+  usd_per_1m_output: 1.98
+  quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-28'
 - model: Qwen/Qwen3.8-27B
-  provider: AkashML
-  usd_per_1m_input: 0.25
-  usd_per_1m_output: 2.2
-  quantization: fp8
+  provider: Phala
+  usd_per_1m_input: 0.1992
+  usd_per_1m_output: 2.075
+  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-28'
@@ -122,7 +122,7 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Ionstream
   usd_per_1m_input: 0.089
-  usd_per_1m_output: 2.55
+  usd_per_1m_output: 2.775
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -161,7 +161,7 @@ offers:
   fetched_at: '2026-09-28'
 - model: Qwen/Qwen3.8-27B
   provider: Reka
-  usd_per_1m_input: 0.0772
+  usd_per_1m_input: 0.0627
   usd_per_1m_output: 4.4
   quantization: null
   context_length: 262144
@@ -169,7 +169,7 @@ offers:
   fetched_at: '2026-09-28'
 - model: Qwen/Qwen3.8-27B
   provider: Wafer
-  usd_per_1m_input: 0.0771
+  usd_per_1m_input: 0.0628
   usd_per_1m_output: 4.4
   quantization: null
   context_length: 262144
