@@ -60,7 +60,7 @@ offers:
   usd_per_1m_input: 0.15
   usd_per_1m_output: 1.875
   quantization: null
-  context_length: 262144
+  context_length: 1000000
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-09-29'
 - model: Qwen/Qwen3.8-27B
@@ -122,7 +122,7 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Ionstream
   usd_per_1m_input: 0.089
-  usd_per_1m_output: 2.775
+  usd_per_1m_output: 2.55
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -169,7 +169,7 @@ offers:
   fetched_at: '2026-09-29'
 - model: Qwen/Qwen3.8-27B
   provider: Wafer
-  usd_per_1m_input: 0.0539
+  usd_per_1m_input: 0.0407
   usd_per_1m_output: 4.4
   quantization: null
   context_length: 262144
