@@ -13,7 +13,7 @@ Qwen/Qwen3.8-27B,Darkbloom,0.05,2.2,fp4,262144,https://openrouter.ai/qwen/qwen3.
 Qwen/Qwen3.8-27B,Parasail,0.24,2.2,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
 Qwen/Qwen3.8-27B,Mancer 2,0.2,2.5,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
 Qwen/Qwen3.8-27B,Alibaba,0.425,2.55,,1000000,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
-Qwen/Qwen3.8-27B,Ionstream,0.145,2.55,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
+Qwen/Qwen3.8-27B,Ionstream,0.224,2.55,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
 Qwen/Qwen3.8-27B,CoreWeave,0.4,3.0,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
 Qwen/Qwen3.8-27B,DekaLLM,0.049,3.0,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
 Qwen/Qwen3.8-27B,Novita,0.42,3.0,,1000000,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-09-30,
