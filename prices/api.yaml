@@ -48,6 +48,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3-8b/providers
   fetched_at: '2026-10-01'
 - model: Qwen/Qwen3.8-27B
+  provider: Cerebras
+  usd_per_1m_input: 0.99
+  usd_per_1m_output: 1.49
+  quantization: fp16
+  context_length: 65536
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-01'
+- model: Qwen/Qwen3.8-27B
   provider: AkashML
   usd_per_1m_input: 0.2025
   usd_per_1m_output: 1.782
@@ -88,6 +96,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-01'
 - model: Qwen/Qwen3.8-27B
+  provider: Ionstream
+  usd_per_1m_input: 0.0893
+  usd_per_1m_output: 2.2
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-01'
+- model: Qwen/Qwen3.8-27B
   provider: Parasail
   usd_per_1m_input: 0.24
   usd_per_1m_output: 2.2
@@ -109,14 +125,6 @@ offers:
   usd_per_1m_output: 2.55
   quantization: null
   context_length: 1000000
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-10-01'
-- model: Qwen/Qwen3.8-27B
-  provider: Ionstream
-  usd_per_1m_input: 0.0893
-  usd_per_1m_output: 2.55
-  quantization: fp8
-  context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-01'
 - model: Qwen/Qwen3.8-27B
