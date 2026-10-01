@@ -389,7 +389,7 @@
       "quantization": "int4",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -400,7 +400,7 @@
       "quantization": "fp8",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -411,7 +411,7 @@
       "quantization": null,
       "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -433,7 +433,7 @@
       "quantization": null,
       "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3-8b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -444,18 +444,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Reka",
-      "usd_per_1m_input": 0.0248,
-      "usd_per_1m_output": 1.87,
-      "quantization": null,
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -466,7 +455,7 @@
       "quantization": "bf16",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -477,7 +466,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -488,7 +477,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -499,7 +488,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -510,7 +499,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -521,7 +510,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -532,18 +521,18 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "Ionstream",
-      "usd_per_1m_input": 0.149,
+      "usd_per_1m_input": 0.089,
       "usd_per_1m_output": 2.55,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -554,7 +543,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -565,7 +554,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -576,7 +565,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -587,7 +576,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
@@ -598,18 +587,29 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Reka",
+      "usd_per_1m_input": 0.0248,
+      "usd_per_1m_output": 4.35,
+      "quantization": null,
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-01",
       "notes": null
     },
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "Wafer",
-      "usd_per_1m_input": 0.0249,
+      "usd_per_1m_input": 0.0248,
       "usd_per_1m_output": 4.35,
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-09-30",
+      "fetched_at": "2026-10-01",
       "notes": null
     }
   ],
