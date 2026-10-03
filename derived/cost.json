@@ -31,12 +31,12 @@
       "provider": "vast",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 2.6689,
+      "usd_per_gpu_hour": 2.8519,
       "min_gpus": 1,
       "product": "H100 SXM, marketplace median",
       "source": "https://console.vast.ai/api/v0/bundles/",
       "checked_at": "2026-10-03",
-      "notes": "median of 7 verified rentable 1x offers; marketplace prices move daily"
+      "notes": "median of 4 verified rentable 1x offers; marketplace prices move daily"
     },
     {
       "provider": "nebius",
@@ -471,6 +471,17 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "Ionstream",
+      "usd_per_1m_input": 0.0893,
+      "usd_per_1m_output": 1.875,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-03",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "Phala",
       "usd_per_1m_input": 0.15,
       "usd_per_1m_output": 1.875,
@@ -497,17 +508,6 @@
       "usd_per_1m_input": 0.05,
       "usd_per_1m_output": 2.2,
       "quantization": "fp4",
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-03",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Ionstream",
-      "usd_per_1m_input": 0.0893,
-      "usd_per_1m_output": 2.2,
-      "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-10-03",
@@ -616,7 +616,7 @@
       "model": "Qwen/Qwen3.8-27B",
       "provider": "Wafer",
       "usd_per_1m_input": 0.0248,
-      "usd_per_1m_output": 6.2,
+      "usd_per_1m_output": 5.2,
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
@@ -658,18 +658,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.1795486080858706,
-          "usd_per_1m_total_tokens": 0.019949845342874507,
-          "usd_per_1k_requests": 0.022982221834991434
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -680,6 +668,18 @@
           "usd_per_1m_output_tokens": 0.18096809762486116,
           "usd_per_1m_total_tokens": 0.020107566402762348,
           "usd_per_1k_requests": 0.023163916495982227
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.19185982067521987,
+          "usd_per_1m_total_tokens": 0.02131775785280221,
+          "usd_per_1k_requests": 0.024558057046428144
         },
         {
           "provider": "runpod",
@@ -789,18 +789,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.049085455959975016,
-          "usd_per_1m_total_tokens": 0.04363151640886668,
-          "usd_per_1k_requests": 0.05026350690301442
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -811,6 +799,18 @@
           "usd_per_1m_output_tokens": 0.049473519626937246,
           "usd_per_1m_total_tokens": 0.04397646189061088,
           "usd_per_1k_requests": 0.050660884097983735
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.05245112662604547,
+          "usd_per_1m_total_tokens": 0.04662322366759598,
+          "usd_per_1k_requests": 0.05370995366507056
         },
         {
           "provider": "runpod",
@@ -920,18 +920,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.20294031364282916,
-          "usd_per_1m_total_tokens": 0.10147015682141458,
-          "usd_per_1k_requests": 0.4156217623405141
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -942,6 +930,18 @@
           "usd_per_1m_output_tokens": 0.20454473517149782,
           "usd_per_1m_total_tokens": 0.10227236758574891,
           "usd_per_1k_requests": 0.4189076176312275
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.21685543874929167,
+          "usd_per_1m_total_tokens": 0.10842771937464583,
+          "usd_per_1k_requests": 0.4441199385585493
         },
         {
           "provider": "runpod",
@@ -1051,18 +1051,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.9421538181959177,
-          "usd_per_1m_total_tokens": 0.05542081283505398,
-          "usd_per_1k_requests": 0.4823827549163099
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1073,6 +1061,18 @@
           "usd_per_1m_output_tokens": 0.9496023721184829,
           "usd_per_1m_total_tokens": 0.055858963065793105,
           "usd_per_1k_requests": 0.4861964145246632
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 1.006755020462714,
+          "usd_per_1m_total_tokens": 0.059220883556630244,
+          "usd_per_1k_requests": 0.5154585704769097
         },
         {
           "provider": "runpod",
@@ -1182,18 +1182,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.04481702206890108,
-          "usd_per_1m_total_tokens": 0.02240851103445054,
-          "usd_per_1k_requests": 0.005736578824819338
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1204,6 +1192,18 @@
           "usd_per_1m_output_tokens": 0.04517134001474162,
           "usd_per_1m_total_tokens": 0.02258567000737081,
           "usd_per_1k_requests": 0.0057819315218869275
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.04789001657548016,
+          "usd_per_1m_total_tokens": 0.02394500828774008,
+          "usd_per_1k_requests": 0.006129922121661461
         },
         {
           "provider": "runpod",
@@ -1313,18 +1313,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.05098935594580678,
-          "usd_per_1m_total_tokens": 0.02549467797290339,
-          "usd_per_1k_requests": 0.006526637561063268
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1335,6 +1323,18 @@
           "usd_per_1m_output_tokens": 0.051392471615354735,
           "usd_per_1m_total_tokens": 0.025696235807677367,
           "usd_per_1k_requests": 0.006578236366765406
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.054485572416293745,
+          "usd_per_1m_total_tokens": 0.027242786208146873,
+          "usd_per_1k_requests": 0.006974153269285599
         },
         {
           "provider": "runpod",
@@ -1444,18 +1444,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.24567255834090626,
-          "usd_per_1m_total_tokens": 0.02729695092676736,
-          "usd_per_1k_requests": 0.031446087467636004
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1466,6 +1454,18 @@
           "usd_per_1m_output_tokens": 0.24761481581814151,
           "usd_per_1m_total_tokens": 0.027512757313126836,
           "usd_per_1k_requests": 0.03169469642472211
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.26251772982593224,
+          "usd_per_1m_total_tokens": 0.029168636647325805,
+          "usd_per_1k_requests": 0.03360226941771933
         },
         {
           "provider": "runpod",
@@ -1575,18 +1575,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.055649226016968624,
-          "usd_per_1m_total_tokens": 0.049465978681749886,
-          "usd_per_1k_requests": 0.056984807441375865
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1597,6 +1585,18 @@
           "usd_per_1m_output_tokens": 0.05608918205464634,
           "usd_per_1m_total_tokens": 0.049857050715241186,
           "usd_per_1k_requests": 0.057435322423957845
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.05946495847644829,
+          "usd_per_1m_total_tokens": 0.05285774086795403,
+          "usd_per_1k_requests": 0.060892117479883046
         },
         {
           "provider": "runpod",
@@ -1706,18 +1706,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 0.2633907621853498,
-          "usd_per_1m_total_tokens": 0.1316953810926749,
-          "usd_per_1k_requests": 0.5394242809555964
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1728,6 +1716,18 @@
           "usd_per_1m_output_tokens": 0.26547309763520216,
           "usd_per_1m_total_tokens": 0.13273654881760108,
           "usd_per_1k_requests": 0.543688903956894
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 0.28145082793525394,
+          "usd_per_1m_total_tokens": 0.14072541396762697,
+          "usd_per_1k_requests": 0.5764112956114
         },
         {
           "provider": "runpod",
@@ -1837,18 +1837,6 @@
       },
       "offers": [
         {
-          "provider": "vast",
-          "provisioning": "on-demand",
-          "product": "H100 SXM, marketplace median",
-          "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-03",
-          "usd_per_hour": 2.6689,
-          "usd_per_month": 1948.3,
-          "usd_per_1m_output_tokens": 1.4781232515561125,
-          "usd_per_1m_total_tokens": 0.08694842656212427,
-          "usd_per_1k_requests": 0.7567991047967296
-        },
-        {
           "provider": "runpod",
           "provisioning": "on-demand",
           "product": "H100 SXM, Community Cloud",
@@ -1859,6 +1847,18 @@
           "usd_per_1m_output_tokens": 1.4898091148735222,
           "usd_per_1m_total_tokens": 0.08763583028667778,
           "usd_per_1k_requests": 0.7627822668152433
+        },
+        {
+          "provider": "vast",
+          "provisioning": "on-demand",
+          "product": "H100 SXM, marketplace median",
+          "source": "https://console.vast.ai/api/v0/bundles/",
+          "checked_at": "2026-10-03",
+          "usd_per_hour": 2.8519,
+          "usd_per_month": 2081.89,
+          "usd_per_1m_output_tokens": 1.579474577958289,
+          "usd_per_1m_total_tokens": 0.09291026929166407,
+          "usd_per_1k_requests": 0.808690983914644
         },
         {
           "provider": "runpod",
