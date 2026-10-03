@@ -170,7 +170,7 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Reka
   usd_per_1m_input: 0.0248
-  usd_per_1m_output: 4.4
+  usd_per_1m_output: 4.35
   quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -178,7 +178,7 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Wafer
   usd_per_1m_input: 0.0248
-  usd_per_1m_output: 5.2
+  usd_per_1m_output: 4.35
   quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers

@@ -20,5 +20,5 @@ Qwen/Qwen3.8-27B,DekaLLM,0.049,3.0,,262144,https://openrouter.ai/qwen/qwen3.8-27
 Qwen/Qwen3.8-27B,Novita,0.42,3.0,,1000000,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
 Qwen/Qwen3.8-27B,Cloudflare,0.45,3.2,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
 Qwen/Qwen3.8-27B,Venice,0.45,3.2,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
-Qwen/Qwen3.8-27B,Reka,0.0248,4.4,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
-Qwen/Qwen3.8-27B,Wafer,0.0248,5.2,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
+Qwen/Qwen3.8-27B,Reka,0.0248,4.35,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
+Qwen/Qwen3.8-27B,Wafer,0.0248,4.35,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-10-03,
