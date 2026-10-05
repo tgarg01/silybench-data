@@ -152,6 +152,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-05'
 - model: Qwen/Qwen3.8-27B
+  provider: Reka
+  usd_per_1m_input: 0.05
+  usd_per_1m_output: 3.0
+  quantization: null
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-05'
+- model: Qwen/Qwen3.8-27B
   provider: Cloudflare
   usd_per_1m_input: 0.45
   usd_per_1m_output: 3.2
@@ -164,14 +172,6 @@ offers:
   usd_per_1m_input: 0.45
   usd_per_1m_output: 3.2
   quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-10-05'
-- model: Qwen/Qwen3.8-27B
-  provider: Reka
-  usd_per_1m_input: 0.0248
-  usd_per_1m_output: 4.35
-  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-05'
