@@ -144,14 +144,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-07'
 - model: Qwen/Qwen3.8-27B
-  provider: ModelRun
-  usd_per_1m_input: 0.45
-  usd_per_1m_output: 3.0
-  quantization: fp4
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-10-07'
-- model: Qwen/Qwen3.8-27B
   provider: Novita
   usd_per_1m_input: 0.42
   usd_per_1m_output: 3.0
@@ -185,9 +177,17 @@ offers:
   fetched_at: '2026-10-07'
 - model: Qwen/Qwen3.8-27B
   provider: Wafer
-  usd_per_1m_input: 0.024
+  usd_per_1m_input: 0.0238
   usd_per_1m_output: 4.35
   quantization: null
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-07'
+- model: Qwen/Qwen3.8-27B
+  provider: ModelRun
+  usd_per_1m_input: 0.8
+  usd_per_1m_output: 5.25
+  quantization: fp4
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-07'
