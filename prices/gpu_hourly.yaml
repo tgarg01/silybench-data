@@ -2,7 +2,7 @@
 # gpu_type uses the benchmark's normalised names (gpubench/hardware.py), so one benchmark of a GPU
 # prices every row with the same gpu_type. Update rules: see CONTRIBUTING.md. Always cite `source`
 # and set `checked_at` to the day you looked. Taxes and storage/egress are excluded.
-refreshed_at: 2026-10-06T18:27+00:00
+refreshed_at: 2026-10-07T06:09+00:00
 offers:
 - provider: runpod
   gpu_type: H100-80GB
@@ -21,11 +21,11 @@ offers:
 - provider: vast
   gpu_type: H100-80GB
   provisioning: on-demand
-  usd_per_gpu_hour: 3.5928
+  usd_per_gpu_hour: 6.1489
   product: H100 SXM, marketplace median
   source: https://console.vast.ai/api/v0/bundles/
-  checked_at: '2026-10-06'
-  notes: median of 4 verified rentable 1x offers; marketplace prices move daily
+  checked_at: '2026-10-07'
+  notes: median of 3 verified rentable 1x offers; marketplace prices move daily
   live: true
 - provider: nebius
   gpu_type: H100-80GB

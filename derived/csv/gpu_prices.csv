@@ -1,7 +1,7 @@
 provider,gpu_type,provisioning,usd_per_gpu_hour,min_gpus,product,source,checked_at,notes
 runpod,H100-80GB,on-demand,2.69,1,"H100 SXM, Community Cloud",https://www.runpod.io/pricing,2026-09-25,
 runpod,H100-80GB,on-demand,3.49,1,"H100 SXM, Secure Cloud",https://www.runpod.io/pricing,2026-09-25,
-vast,H100-80GB,on-demand,3.5928,1,"H100 SXM, marketplace median",https://console.vast.ai/api/v0/bundles/,2026-10-06,median of 4 verified rentable 1x offers; marketplace prices move daily
+vast,H100-80GB,on-demand,6.1489,1,"H100 SXM, marketplace median",https://console.vast.ai/api/v0/bundles/,2026-10-07,median of 3 verified rentable 1x offers; marketplace prices move daily
 nebius,H100-80GB,on-demand,3.85,1,HGX H100,https://nebius.com/prices,2026-09-25,
 lambda,H100-80GB,on-demand,4.29,1,1x H100 SXM,https://lambda.ai/pricing,2026-09-25,
 lambda,H100-80GB,on-demand,3.99,8,8x H100 SXM,https://lambda.ai/pricing,2026-09-25,
