@@ -24,14 +24,6 @@ offers:
   context_length: 40960
   source: https://openrouter.ai/qwen/qwen3-14b/providers
   fetched_at: '2026-10-09'
-- model: Qwen/Qwen3-14B
-  provider: Alibaba
-  usd_per_1m_input: 0.2275
-  usd_per_1m_output: 0.91
-  quantization: null
-  context_length: 131072
-  source: https://openrouter.ai/qwen/qwen3-14b/providers
-  fetched_at: '2026-10-09'
 - model: Qwen/Qwen3-8B
   provider: Fireworks
   usd_per_1m_input: 0.2
@@ -39,13 +31,21 @@ offers:
   source: https://docs.fireworks.ai/serverless/pricing
   fetched_at: '2026-09-25'
   notes: 4B-16B size-tier price (Standard tier)
-- model: Qwen/Qwen3-8B
-  provider: Alibaba
-  usd_per_1m_input: 0.117
-  usd_per_1m_output: 0.455
-  quantization: null
-  context_length: 131072
-  source: https://openrouter.ai/qwen/qwen3-8b/providers
+- model: Qwen/Qwen3.8-27B
+  provider: Near AI
+  usd_per_1m_input: 0.04
+  usd_per_1m_output: 1.35
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-09'
+- model: Qwen/Qwen3.8-27B
+  provider: Reka
+  usd_per_1m_input: 0.14
+  usd_per_1m_output: 1.4
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-09'
 - model: Qwen/Qwen3.8-27B
   provider: Cerebras
@@ -80,14 +80,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-09'
 - model: Qwen/Qwen3.8-27B
-  provider: Reka
-  usd_per_1m_input: 0.2
-  usd_per_1m_output: 2.0
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-10-09'
-- model: Qwen/Qwen3.8-27B
   provider: Chutes
   usd_per_1m_input: 0.24
   usd_per_1m_output: 2.2
@@ -108,6 +100,14 @@ offers:
   usd_per_1m_input: 0.24
   usd_per_1m_output: 2.2
   quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-09'
+- model: Qwen/Qwen3.8-27B
+  provider: Wafer
+  usd_per_1m_input: 0.045
+  usd_per_1m_output: 2.3
+  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-09'
@@ -172,14 +172,6 @@ offers:
   usd_per_1m_input: 0.45
   usd_per_1m_output: 3.2
   quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-10-09'
-- model: Qwen/Qwen3.8-27B
-  provider: Wafer
-  usd_per_1m_input: 0.045
-  usd_per_1m_output: 4.35
-  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-09'
