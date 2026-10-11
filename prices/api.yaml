@@ -40,10 +40,10 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-11'
 - model: Qwen/Qwen3.8-27B
-  provider: Reka
-  usd_per_1m_input: 0.14
-  usd_per_1m_output: 1.4
-  quantization: fp8
+  provider: Tenstorrent
+  usd_per_1m_input: 0.04
+  usd_per_1m_output: 1.35
+  quantization: fp4
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-11'
@@ -157,6 +157,14 @@ offers:
   usd_per_1m_output: 3.0
   quantization: null
   context_length: 1000000
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-11'
+- model: Qwen/Qwen3.8-27B
+  provider: Reka
+  usd_per_1m_input: 0.05
+  usd_per_1m_output: 3.0
+  quantization: fp8
+  context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-10-11'
 - model: Qwen/Qwen3.8-27B
