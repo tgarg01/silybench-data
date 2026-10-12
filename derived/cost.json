@@ -416,6 +416,17 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "Chutes",
+      "usd_per_1m_input": 0.039,
+      "usd_per_1m_output": 1.25,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-12",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "Near AI",
       "usd_per_1m_input": 0.04,
       "usd_per_1m_output": 1.35,
@@ -460,31 +471,9 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
-      "provider": "Phala",
-      "usd_per_1m_input": 0.15,
-      "usd_per_1m_output": 1.875,
-      "quantization": null,
-      "context_length": 1000000,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-12",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
       "provider": "AkashML",
       "usd_per_1m_input": 0.225,
       "usd_per_1m_output": 1.98,
-      "quantization": "fp8",
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-12",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Chutes",
-      "usd_per_1m_input": 0.24,
-      "usd_per_1m_output": 2.2,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
@@ -506,6 +495,17 @@
       "model": "Qwen/Qwen3.8-27B",
       "provider": "Parasail",
       "usd_per_1m_input": 0.24,
+      "usd_per_1m_output": 2.2,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-12",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Reka",
+      "usd_per_1m_input": 0.04,
       "usd_per_1m_output": 2.2,
       "quantization": "fp8",
       "context_length": 262144,
@@ -559,6 +559,17 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "Phala",
+      "usd_per_1m_input": 0.2,
+      "usd_per_1m_output": 2.5,
+      "quantization": null,
+      "context_length": 1000000,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-12",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "Alibaba",
       "usd_per_1m_input": 0.425,
       "usd_per_1m_output": 2.55,
@@ -586,17 +597,6 @@
       "usd_per_1m_output": 3.0,
       "quantization": null,
       "context_length": 1000000,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-12",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Reka",
-      "usd_per_1m_input": 0.05,
-      "usd_per_1m_output": 3.0,
-      "quantization": "fp8",
-      "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-10-12",
       "notes": null
