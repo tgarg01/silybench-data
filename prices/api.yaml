@@ -73,7 +73,7 @@ offers:
   fetched_at: '2026-10-14'
 - model: Qwen/Qwen3.8-27B
   provider: Darkbloom
-  usd_per_1m_input: 0.05
+  usd_per_1m_input: 0.035
   usd_per_1m_output: 2.2
   quantization: fp4
   context_length: 262144
