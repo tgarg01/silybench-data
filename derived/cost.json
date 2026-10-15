@@ -31,7 +31,7 @@
       "provider": "vast",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 3.7927,
+      "usd_per_gpu_hour": 3.5474,
       "min_gpus": 1,
       "product": "H100 SXM, marketplace median",
       "source": "https://console.vast.ai/api/v0/bundles/",
@@ -416,17 +416,6 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
-      "provider": "Tenstorrent",
-      "usd_per_1m_input": 0.02,
-      "usd_per_1m_output": 0.5,
-      "quantization": "fp4",
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-15",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
       "provider": "Chutes",
       "usd_per_1m_input": 0.039,
       "usd_per_1m_output": 1.25,
@@ -698,11 +687,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.2551515627739074,
-          "usd_per_1m_total_tokens": 0.028350173641545264,
-          "usd_per_1k_requests": 0.03265940003506015
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.2386491559533206,
+          "usd_per_1m_total_tokens": 0.026516572883702287,
+          "usd_per_1k_requests": 0.030547091962025034
         },
         {
           "provider": "nebius",
@@ -829,11 +818,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.06975398434538471,
-          "usd_per_1m_total_tokens": 0.06200354164034196,
-          "usd_per_1k_requests": 0.07142807996967394
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.0652425143214116,
+          "usd_per_1m_total_tokens": 0.05799334606347697,
+          "usd_per_1k_requests": 0.06680833466512548
         },
         {
           "provider": "nebius",
@@ -960,11 +949,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.2883928688048103,
-          "usd_per_1m_total_tokens": 0.14419643440240515,
-          "usd_per_1k_requests": 0.5906285953122514
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.26974051804734994,
+          "usd_per_1m_total_tokens": 0.13487025902367497,
+          "usd_per_1k_requests": 0.5524285809609727
         },
         {
           "provider": "nebius",
@@ -1091,11 +1080,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 1.338868742280212,
-          "usd_per_1m_total_tokens": 0.07875698484001246,
-          "usd_per_1k_requests": 0.6855007960474685
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 1.2522748902799652,
+          "usd_per_1m_total_tokens": 0.07366322883999796,
+          "usd_per_1k_requests": 0.6411647438233422
         },
         {
           "provider": "nebius",
@@ -1222,11 +1211,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.06368823095684406,
-          "usd_per_1m_total_tokens": 0.03184411547842203,
-          "usd_per_1k_requests": 0.00815209356247604
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.05956907493245146,
+          "usd_per_1m_total_tokens": 0.02978453746622573,
+          "usd_per_1k_requests": 0.007624841591353787
         },
         {
           "provider": "nebius",
@@ -1353,11 +1342,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.07245956397604308,
-          "usd_per_1m_total_tokens": 0.03622978198802154,
-          "usd_per_1k_requests": 0.009274824188933516
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.06777310550494772,
+          "usd_per_1m_total_tokens": 0.03388655275247386,
+          "usd_per_1k_requests": 0.008674957504633308
         },
         {
           "provider": "nebius",
@@ -1484,11 +1473,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.3491184802800986,
-          "usd_per_1m_total_tokens": 0.03879094225334429,
-          "usd_per_1k_requests": 0.04468716547585263
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.3265385864807715,
+          "usd_per_1m_total_tokens": 0.03628206516453016,
+          "usd_per_1k_requests": 0.04179693906953875
         },
         {
           "provider": "nebius",
@@ -1615,11 +1604,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.07908157649764207,
-          "usd_per_1m_total_tokens": 0.07029473466457073,
-          "usd_per_1k_requests": 0.08097953433358547
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.07396682692217561,
+          "usd_per_1m_total_tokens": 0.06574829059748945,
+          "usd_per_1k_requests": 0.07574203076830784
         },
         {
           "provider": "nebius",
@@ -1746,11 +1735,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 0.37429732988885916,
-          "usd_per_1m_total_tokens": 0.18714866494442958,
-          "usd_per_1k_requests": 0.7665609316123836
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 0.3500889466732774,
+          "usd_per_1m_total_tokens": 0.1750444733366387,
+          "usd_per_1k_requests": 0.7169821627868721
         },
         {
           "provider": "nebius",
@@ -1877,11 +1866,11 @@
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
           "checked_at": "2026-10-15",
-          "usd_per_hour": 3.7927,
-          "usd_per_month": 2768.67,
-          "usd_per_1m_output_tokens": 2.100520085494724,
-          "usd_per_1m_total_tokens": 0.1235600050291014,
-          "usd_per_1k_requests": 1.0754662837732987
+          "usd_per_hour": 3.5474,
+          "usd_per_month": 2589.6,
+          "usd_per_1m_output_tokens": 1.9646650015250309,
+          "usd_per_1m_total_tokens": 0.11556852950147241,
+          "usd_per_1k_requests": 1.0059084807808159
         },
         {
           "provider": "nebius",
