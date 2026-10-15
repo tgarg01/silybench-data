@@ -515,17 +515,6 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
-      "provider": "Wafer",
-      "usd_per_1m_input": 0.04,
-      "usd_per_1m_output": 2.3,
-      "quantization": null,
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-15",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
       "provider": "Ionstream",
       "usd_per_1m_input": 0.0893,
       "usd_per_1m_output": 2.35,
@@ -629,6 +618,17 @@
       "usd_per_1m_input": 0.45,
       "usd_per_1m_output": 3.2,
       "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-15",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Wafer",
+      "usd_per_1m_input": 0.2,
+      "usd_per_1m_output": 6.0,
+      "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-10-15",
