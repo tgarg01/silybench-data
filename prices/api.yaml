@@ -32,6 +32,14 @@ offers:
   fetched_at: '2026-09-25'
   notes: 4B-16B size-tier price (Standard tier)
 - model: Qwen/Qwen3.8-27B
+  provider: Tenstorrent
+  usd_per_1m_input: 0.02
+  usd_per_1m_output: 0.5
+  quantization: fp4
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-10-18'
+- model: Qwen/Qwen3.8-27B
   provider: Chutes
   usd_per_1m_input: 0.039
   usd_per_1m_output: 1.25
