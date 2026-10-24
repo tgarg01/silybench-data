@@ -31,12 +31,12 @@
       "provider": "vast",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 3.5876,
+      "usd_per_gpu_hour": 3.6895,
       "min_gpus": 1,
       "product": "H100 SXM, marketplace median",
       "source": "https://console.vast.ai/api/v0/bundles/",
-      "checked_at": "2026-10-23",
-      "notes": "median of 3 verified rentable 1x offers; marketplace prices move daily"
+      "checked_at": "2026-10-24",
+      "notes": "median of 4 verified rentable 1x offers; marketplace prices move daily"
     },
     {
       "provider": "nebius",
@@ -389,7 +389,7 @@
       "quantization": "int4",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -400,7 +400,7 @@
       "quantization": "fp8",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -416,13 +416,24 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "Tenstorrent",
+      "usd_per_1m_input": 0.02,
+      "usd_per_1m_output": 0.5,
+      "quantization": "fp4",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-10-24",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "Chutes",
       "usd_per_1m_input": 0.039,
       "usd_per_1m_output": 1.25,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -433,7 +444,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -444,7 +455,7 @@
       "quantization": "fp16",
       "context_length": 65536,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -455,7 +466,7 @@
       "quantization": "bf16",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -466,7 +477,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -477,7 +488,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -488,7 +499,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -499,7 +510,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -510,7 +521,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -521,7 +532,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -532,7 +543,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -543,18 +554,18 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "Mancer 2",
-      "usd_per_1m_input": 0.2,
+      "usd_per_1m_input": 0.18,
       "usd_per_1m_output": 2.5,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -565,7 +576,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -576,7 +587,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -587,7 +598,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -598,7 +609,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -609,7 +620,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -620,7 +631,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     },
     {
@@ -631,7 +642,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-10-23",
+      "fetched_at": "2026-10-24",
       "notes": null
     }
   ],
@@ -697,12 +708,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.2413535862598334,
-          "usd_per_1m_total_tokens": 0.02681706513998149,
-          "usd_per_1k_requests": 0.030893259041258676
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.2482088461661432,
+          "usd_per_1m_total_tokens": 0.027578760685127022,
+          "usd_per_1k_requests": 0.03177073230926633
         },
         {
           "provider": "nebius",
@@ -828,12 +839,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.06598185836936805,
-          "usd_per_1m_total_tokens": 0.058650540772771605,
-          "usd_per_1k_requests": 0.0675654229702329
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.06785596678943678,
+          "usd_per_1m_total_tokens": 0.0603164149239438,
+          "usd_per_1k_requests": 0.06948450999238327
         },
         {
           "provider": "nebius",
@@ -959,12 +970,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.27279728323467123,
-          "usd_per_1m_total_tokens": 0.13639864161733561,
-          "usd_per_1k_requests": 0.5586888360646066
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.28054565071198556,
+          "usd_per_1m_total_tokens": 0.14027282535599278,
+          "usd_per_1k_requests": 0.5745574926581465
         },
         {
           "provider": "nebius",
@@ -1090,12 +1101,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 1.2664659740566058,
-          "usd_per_1m_total_tokens": 0.07449799847391798,
-          "usd_per_1k_requests": 0.6484305787169822
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 1.3024379003461497,
+          "usd_per_1m_total_tokens": 0.0766139941380088,
+          "usd_per_1k_requests": 0.6668482049772286
         },
         {
           "provider": "nebius",
@@ -1221,12 +1232,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.060244126184716376,
-          "usd_per_1m_total_tokens": 0.030122063092358188,
-          "usd_per_1k_requests": 0.007711248151643696
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.061955263562969966,
+          "usd_per_1m_total_tokens": 0.030977631781484983,
+          "usd_per_1k_requests": 0.007930273736060155
         },
         {
           "provider": "nebius",
@@ -1352,12 +1363,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.06854112682797273,
-          "usd_per_1m_total_tokens": 0.03427056341398636,
-          "usd_per_1k_requests": 0.00877326423398051
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.07048792714678487,
+          "usd_per_1m_total_tokens": 0.035243963573392434,
+          "usd_per_1k_requests": 0.009022454674788464
         },
         {
           "provider": "nebius",
@@ -1483,12 +1494,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.3302390012004329,
-          "usd_per_1m_total_tokens": 0.03669322235560366,
-          "usd_per_1k_requests": 0.04227059215365542
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.3396189081639529,
+          "usd_per_1m_total_tokens": 0.03773543424043921,
+          "usd_per_1k_requests": 0.04347122024498597
         },
         {
           "provider": "nebius",
@@ -1614,12 +1625,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.07480503700343838,
-          "usd_per_1m_total_tokens": 0.06649336622527856,
-          "usd_per_1k_requests": 0.07660035789152089
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.0769297536024601,
+          "usd_per_1m_total_tokens": 0.06838200320218676,
+          "usd_per_1k_requests": 0.07877606768891915
         },
         {
           "provider": "nebius",
@@ -1745,12 +1756,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 0.35405623980522355,
-          "usd_per_1m_total_tokens": 0.17702811990261177,
-          "usd_per_1k_requests": 0.7251071791210979
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 0.3641126370725199,
+          "usd_per_1m_total_tokens": 0.18205631853625995,
+          "usd_per_1k_requests": 0.7457026807245207
         },
         {
           "provider": "nebius",
@@ -1876,12 +1887,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-10-23",
-          "usd_per_hour": 3.5876,
-          "usd_per_month": 2618.95,
-          "usd_per_1m_output_tokens": 1.9869290633904269,
-          "usd_per_1m_total_tokens": 0.11687818019943687,
-          "usd_per_1k_requests": 1.0173076804558985
+          "checked_at": "2026-10-24",
+          "usd_per_hour": 3.6895,
+          "usd_per_month": 2693.34,
+          "usd_per_1m_output_tokens": 2.043364583392513,
+          "usd_per_1m_total_tokens": 0.12019791667014784,
+          "usd_per_1k_requests": 1.0462026666969668
         },
         {
           "provider": "nebius",
