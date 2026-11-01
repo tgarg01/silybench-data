@@ -417,8 +417,8 @@
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.004,
-      "usd_per_1m_output": 0.22,
+      "usd_per_1m_input": 0.006,
+      "usd_per_1m_output": 0.349,
       "quantization": "fp8",
       "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
