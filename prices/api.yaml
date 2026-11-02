@@ -33,8 +33,8 @@ offers:
   notes: 4B-16B size-tier price (Standard tier)
 - model: Qwen/Qwen3.8-27B
   provider: PrimeIntellect
-  usd_per_1m_input: 0.005
-  usd_per_1m_output: 0.262
+  usd_per_1m_input: 0.004
+  usd_per_1m_output: 0.22
   quantization: fp8
   context_length: 131072
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -112,14 +112,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-02'
 - model: Qwen/Qwen3.8-27B
-  provider: Reka
-  usd_per_1m_input: 0.04
-  usd_per_1m_output: 2.2
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-02'
-- model: Qwen/Qwen3.8-27B
   provider: Modal
   usd_per_1m_input: 0.04
   usd_per_1m_output: 2.3
@@ -168,6 +160,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-02'
 - model: Qwen/Qwen3.8-27B
+  provider: Reka
+  usd_per_1m_input: 0.15
+  usd_per_1m_output: 2.5
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-02'
+- model: Qwen/Qwen3.8-27B
   provider: Alibaba
   usd_per_1m_input: 0.425
   usd_per_1m_output: 2.55
@@ -189,6 +189,14 @@ offers:
   usd_per_1m_output: 3.0
   quantization: null
   context_length: 1000000
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-02'
+- model: Qwen/Qwen3.8-27B
+  provider: StreamLake
+  usd_per_1m_input: 0.5
+  usd_per_1m_output: 3.0
+  quantization: null
+  context_length: 1024000
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-02'
 - model: Qwen/Qwen3.8-27B
