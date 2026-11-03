@@ -416,17 +416,6 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
-      "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.005,
-      "usd_per_1m_output": 0.258,
-      "quantization": "fp8",
-      "context_length": 131072,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-03",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
       "provider": "Chutes",
       "usd_per_1m_input": 0.039,
       "usd_per_1m_output": 1.25,
@@ -471,6 +460,17 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "StreamLake",
+      "usd_per_1m_input": 0.3,
+      "usd_per_1m_output": 1.8,
+      "quantization": null,
+      "context_length": 1024000,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-03",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "DeepInfra",
       "usd_per_1m_input": 0.15,
       "usd_per_1m_output": 1.875,
@@ -487,6 +487,17 @@
       "usd_per_1m_output": 1.95,
       "quantization": "fp8",
       "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-03",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "PrimeIntellect",
+      "usd_per_1m_input": 0.036,
+      "usd_per_1m_output": 1.963,
+      "quantization": "fp8",
+      "context_length": 131072,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-03",
       "notes": null
@@ -630,17 +641,6 @@
       "usd_per_1m_output": 3.0,
       "quantization": null,
       "context_length": 1000000,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-03",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "StreamLake",
-      "usd_per_1m_input": 0.5,
-      "usd_per_1m_output": 3.0,
-      "quantization": null,
-      "context_length": 1024000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-03",
       "notes": null
