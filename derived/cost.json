@@ -389,7 +389,7 @@
       "quantization": "int4",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -400,7 +400,7 @@
       "quantization": "fp8",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -416,13 +416,24 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "PrimeIntellect",
+      "usd_per_1m_input": 0.005,
+      "usd_per_1m_output": 0.257,
+      "quantization": "fp8",
+      "context_length": 131072,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-05",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "StreamLake",
-      "usd_per_1m_input": 0.2,
-      "usd_per_1m_output": 1.2,
+      "usd_per_1m_input": 0.175,
+      "usd_per_1m_output": 1.05,
       "quantization": null,
       "context_length": 1024000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -433,7 +444,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -444,7 +455,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -455,7 +466,7 @@
       "quantization": "fp16",
       "context_length": 65536,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -466,18 +477,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.028,
-      "usd_per_1m_output": 1.538,
-      "quantization": "fp8",
-      "context_length": 131072,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -488,7 +488,7 @@
       "quantization": "bf16",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -499,7 +499,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -510,7 +510,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -521,7 +521,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -532,7 +532,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -543,7 +543,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -554,7 +554,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -565,7 +565,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -576,7 +576,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -587,7 +587,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -598,7 +598,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -609,7 +609,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -620,7 +620,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -631,7 +631,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -642,7 +642,7 @@
       "quantization": "fp4",
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -653,7 +653,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -664,7 +664,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     },
     {
@@ -675,7 +675,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-04",
+      "fetched_at": "2026-11-05",
       "notes": null
     }
   ],
