@@ -40,14 +40,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-06'
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
-  usd_per_1m_input: 0.022
-  usd_per_1m_output: 1.221
-  quantization: fp8
-  context_length: 131072
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-06'
-- model: Qwen/Qwen3.8-27B
   provider: Chutes
   usd_per_1m_input: 0.039
   usd_per_1m_output: 1.25
@@ -117,6 +109,14 @@ offers:
   usd_per_1m_output: 2.2
   quantization: fp8
   context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-06'
+- model: Qwen/Qwen3.8-27B
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.04
+  usd_per_1m_output: 2.2
+  quantization: fp8
+  context_length: 131072
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-06'
 - model: Qwen/Qwen3.8-27B
