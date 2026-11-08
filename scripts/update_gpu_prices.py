@@ -11,6 +11,7 @@ Sources (CI secrets in brackets; a missing secret just skips that provider):
   vast    public marketplace search: median of verified, rentable offers  (no key)
   runpod  GraphQL gpuTypes secure/community prices                       [RUNPOD_API_KEY]
   lambda  instance-types API                                             [LAMBDA_API_KEY]
+  runcrate  public GPU pricing feed, on-demand price per GPU-hour                (no key)
 """
 
 from __future__ import annotations
@@ -158,6 +159,27 @@ def lambda_prices() -> dict[tuple[str, str], float]:
     return out
 
 
+# --- Runcrate: public pricing feed -----------------------------------------------------------
+# gpu_type here -> the feed's gpu_type. Only types the feed identifies without guessing: it does
+# not say SXM or PCIe, so the H100 and A100 rows (which this file keeps apart) are not read.
+RUNCRATE_TYPES = {"B200-180GB": "B200", "H200-141GB": "H200", "L40S-48GB": "L40S",
+                  "RTX4090-24GB": "RTX4090", "A10-24GB": "A10"}
+
+
+def runcrate_prices() -> dict[str, float]:
+    r = httpx.get("https://www.runcrate.ai/api/gpu-pricing", timeout=60)
+    r.raise_for_status()
+    by_type = {g["gpu_type"]: g for g in r.json()["gpus"]}
+    out = {}
+    for gpu_type, feed_type in RUNCRATE_TYPES.items():
+        g = by_type.get(feed_type)
+        # min_price_hr is the live on-demand price per GPU-hour; a type with no live offers
+        # keeps a stale price in the feed, so it is skipped.
+        if g and (g.get("available_options") or 0) >= 1 and (g.get("min_price_hr") or 0) > 0:
+            out[gpu_type] = float(g["min_price_hr"])
+    return out
+
+
 def main() -> int:
     data = yaml.safe_load(PRICES.read_text())
     offers = data["offers"]
@@ -174,6 +196,7 @@ def main() -> int:
 
     sources = {
         "gcp": gcp_prices, "vast": vast_prices, "runpod": runpod_prices, "lambda": lambda_prices,
+        "runcrate": runcrate_prices,
     }
     results = {}
     for name, fn in sources.items():
@@ -200,6 +223,8 @@ def main() -> int:
                 set_price(row, results["runpod"][(row["gpu_type"], tier)])
         elif p == "lambda" and (row["gpu_type"], product) in results["lambda"]:
             set_price(row, results["lambda"][(row["gpu_type"], product)])
+        elif p == "runcrate" and row["gpu_type"] in results["runcrate"]:
+            set_price(row, results["runcrate"][row["gpu_type"]])
 
     data["refreshed_at"] = datetime.now(UTC).isoformat(timespec="minutes")
     header = PRICES.read_text().split("offers:")[0].split("refreshed_at:")[0]

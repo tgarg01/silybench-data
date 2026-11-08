@@ -10,7 +10,7 @@ numbers derived from them. Every number on the site comes from this repo.
 | `runs/<run_id>/result.json` | One benchmark session (one model × precision × machine), schema in `derived/schema.json` | `gpubench submit` (a PR from the GPU box) |
 | `runs/<run_id>/raw.tar.gz` | Raw evidence: per-repeat `vllm bench serve` JSON, 0.5 s GPU telemetry CSVs, vLLM log, lm-eval results and logs | same |
 | **Releases** (`pipeline-2026-09-24`, `exp-<id>`) | Everything else, too big for git: complete run directories incl. per-question accuracy samples, VM logs, the exact code bundles that ran (private Terraform state removed; `MANIFEST.sha256` lists every original file), prompt datasets, and later Nsight reports | `gpubench publish-raw` |
-| `prices/gpu_hourly.yaml` | GPU rental prices, USD per GPU-hour, with source and date. GCP (billing catalog) and Vast refresh automatically; RunPod/Lambda too once their API-key secrets are set | `scripts/update_gpu_prices.py` (CI, every 6 h) + hand-checked rows |
+| `prices/gpu_hourly.yaml` | GPU rental prices, USD per GPU-hour, with source and date. GCP (billing catalog), Vast and Runcrate (public pricing feed) refresh automatically; RunPod/Lambda too once their API-key secrets are set | `scripts/update_gpu_prices.py` (CI, every 6 h) + hand-checked rows |
 | `prices/api.yaml` | API list prices for the same models, per provider | `scripts/update_api_prices.py` (CI, every 6 h) |
 | `prices/api_manual.yaml`, `prices/model_map.yaml` | API prices not on OpenRouter; HF id → OpenRouter slug | hand-maintained |
 | `derived/` | **Generated, never edit.** Merged runs, cost model, CSV, SQLite, reproduction guide | CI: `gpubench dataset build` |
