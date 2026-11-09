@@ -33,8 +33,8 @@ offers:
   notes: 4B-16B size-tier price (Standard tier)
 - model: Qwen/Qwen3.8-27B
   provider: PrimeIntellect
-  usd_per_1m_input: 0.047
-  usd_per_1m_output: 0.331
+  usd_per_1m_input: 0.058
+  usd_per_1m_output: 0.414
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -107,6 +107,14 @@ offers:
   provider: AkashML
   usd_per_1m_input: 0.225
   usd_per_1m_output: 1.98
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-09'
+- model: Qwen/Qwen3.8-27B
+  provider: Tenstorrent
+  usd_per_1m_input: 0.15
+  usd_per_1m_output: 2.0
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
