@@ -31,12 +31,12 @@
       "provider": "vast",
       "gpu_type": "H100-80GB",
       "provisioning": "on-demand",
-      "usd_per_gpu_hour": 3.1076,
+      "usd_per_gpu_hour": 3.4053,
       "min_gpus": 1,
       "product": "H100 SXM, marketplace median",
       "source": "https://console.vast.ai/api/v0/bundles/",
-      "checked_at": "2026-11-09",
-      "notes": "median of 3 verified rentable 1x offers; marketplace prices move daily"
+      "checked_at": "2026-11-10",
+      "notes": "median of 5 verified rentable 1x offers; marketplace prices move daily"
     },
     {
       "provider": "nebius",
@@ -389,7 +389,7 @@
       "quantization": "int4",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -400,7 +400,7 @@
       "quantization": "fp8",
       "context_length": 40960,
       "source": "https://openrouter.ai/qwen/qwen3-14b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -417,12 +417,12 @@
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.058,
-      "usd_per_1m_output": 0.414,
+      "usd_per_1m_input": 0.045,
+      "usd_per_1m_output": 0.32,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -433,7 +433,7 @@
       "quantization": null,
       "context_length": 1024000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -444,7 +444,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -455,7 +455,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -466,7 +466,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -477,7 +477,7 @@
       "quantization": "fp16",
       "context_length": 65536,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -488,7 +488,18 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Tenstorrent",
+      "usd_per_1m_input": 0.15,
+      "usd_per_1m_output": 1.6,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -499,7 +510,7 @@
       "quantization": "bf16",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -510,7 +521,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -521,18 +532,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Tenstorrent",
-      "usd_per_1m_input": 0.15,
-      "usd_per_1m_output": 2.0,
-      "quantization": "fp8",
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -543,7 +543,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -554,7 +554,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -565,7 +565,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -576,7 +576,7 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -587,7 +587,7 @@
       "quantization": "fp4",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -598,7 +598,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -609,7 +609,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -620,7 +620,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -631,7 +631,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -642,7 +642,7 @@
       "quantization": "fp4",
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -653,7 +653,7 @@
       "quantization": null,
       "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -664,7 +664,18 @@
       "quantization": null,
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "GMICloud",
+      "usd_per_1m_input": 0.45,
+      "usd_per_1m_output": 3.2,
+      "quantization": "bf16",
+      "context_length": 1048575,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-10",
       "notes": null
     },
     {
@@ -675,7 +686,7 @@
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-09",
+      "fetched_at": "2026-11-10",
       "notes": null
     }
   ],
@@ -729,12 +740,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.2090618811074418,
-          "usd_per_1m_total_tokens": 0.02322909790082687,
-          "usd_per_1k_requests": 0.02675992078175255
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.229089465740498,
+          "usd_per_1m_total_tokens": 0.025454385082277556,
+          "usd_per_1k_requests": 0.029323451614783745
         },
         {
           "provider": "runpod",
@@ -860,12 +871,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.05715386973705211,
-          "usd_per_1m_total_tokens": 0.05080343976626854,
-          "usd_per_1k_requests": 0.05852556261074136
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.06262906185338639,
+          "usd_per_1m_total_tokens": 0.05567027720301012,
+          "usd_per_1k_requests": 0.06413215933786766
         },
         {
           "provider": "runpod",
@@ -991,12 +1002,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.23629859443083517,
-          "usd_per_1m_total_tokens": 0.11814929721541759,
-          "usd_per_1k_requests": 0.4839395213943505
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.2589353853827143,
+          "usd_per_1m_total_tokens": 0.12946769269135716,
+          "usd_per_1k_requests": 0.5302996692637989
         },
         {
           "provider": "runpod",
@@ -1122,12 +1133,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 1.097020197619107,
-          "usd_per_1m_total_tokens": 0.06453059985994745,
-          "usd_per_1k_requests": 0.5616743411809827
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 1.2021118802137805,
+          "usd_per_1m_total_tokens": 0.07071246354198708,
+          "usd_per_1k_requests": 0.6154812826694557
         },
         {
           "provider": "runpod",
@@ -1253,12 +1264,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.052183812724836826,
-          "usd_per_1m_total_tokens": 0.026091906362418413,
-          "usd_per_1k_requests": 0.006679528028779113
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.057182886301932946,
+          "usd_per_1m_total_tokens": 0.028591443150966473,
+          "usd_per_1k_requests": 0.007319409446647418
         },
         {
           "provider": "runpod",
@@ -1384,12 +1395,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.05937072297095776,
-          "usd_per_1m_total_tokens": 0.02968536148547888,
-          "usd_per_1k_requests": 0.0075994525402825934
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.06505828386311058,
+          "usd_per_1m_total_tokens": 0.03252914193155529,
+          "usd_per_1k_requests": 0.008327460334478154
         },
         {
           "provider": "runpod",
@@ -1515,12 +1526,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.2860549448462664,
-          "usd_per_1m_total_tokens": 0.03178388276069627,
-          "usd_per_1k_requests": 0.036615032940322104
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.3134582647975901,
+          "usd_per_1m_total_tokens": 0.034828696088621124,
+          "usd_per_1k_requests": 0.040122657894091536
         },
         {
           "provider": "runpod",
@@ -1646,12 +1657,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.06479655842119664,
-          "usd_per_1m_total_tokens": 0.05759694081884146,
-          "usd_per_1k_requests": 0.06635167582330537
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.07100390024189114,
+          "usd_per_1m_total_tokens": 0.06311457799279213,
+          "usd_per_1k_requests": 0.07270799384769654
         },
         {
           "provider": "runpod",
@@ -1777,12 +1788,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 0.30668557554318004,
-          "usd_per_1m_total_tokens": 0.15334278777159002,
-          "usd_per_1k_requests": 0.6280920587124327
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 0.33606525627403494,
+          "usd_per_1m_total_tokens": 0.16803262813701747,
+          "usd_per_1k_requests": 0.6882616448492235
         },
         {
           "provider": "runpod",
@@ -1908,12 +1919,12 @@
           "provisioning": "on-demand",
           "product": "H100 SXM, marketplace median",
           "source": "https://console.vast.ai/api/v0/bundles/",
-          "checked_at": "2026-11-09",
-          "usd_per_hour": 3.1076,
-          "usd_per_month": 2268.55,
-          "usd_per_1m_output_tokens": 1.7210895187289805,
-          "usd_per_1m_total_tokens": 0.10124055992523415,
-          "usd_per_1k_requests": 0.881197833589238
+          "checked_at": "2026-11-10",
+          "usd_per_hour": 3.4053,
+          "usd_per_month": 2485.87,
+          "usd_per_1m_output_tokens": 1.8859654196575482,
+          "usd_per_1m_total_tokens": 0.11093914233279695,
+          "usd_per_1k_requests": 0.9656142948646647
         },
         {
           "provider": "runpod",
