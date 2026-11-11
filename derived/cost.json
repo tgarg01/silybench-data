@@ -417,8 +417,8 @@
     {
       "model": "Qwen/Qwen3.8-27B",
       "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.047,
-      "usd_per_1m_output": 0.333,
+      "usd_per_1m_input": 0.048,
+      "usd_per_1m_output": 0.342,
       "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
@@ -432,17 +432,6 @@
       "usd_per_1m_output": 1.05,
       "quantization": null,
       "context_length": 1024000,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-11",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "Nebius",
-      "usd_per_1m_input": 0.18,
-      "usd_per_1m_output": 1.2,
-      "quantization": "fp4",
-      "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-11",
       "notes": null
@@ -619,6 +608,17 @@
       "usd_per_1m_output": 3.0,
       "quantization": "fp8",
       "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-11",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Nebius",
+      "usd_per_1m_input": 0.45,
+      "usd_per_1m_output": 3.0,
+      "quantization": "fp4",
+      "context_length": 1000000,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-11",
       "notes": null
