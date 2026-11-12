@@ -243,3 +243,48 @@ offers:
   product: RTX 4090, Secure Cloud
   source: https://www.runpod.io/pricing
   checked_at: 2026-09-25
+- provider: runcrate
+  gpu_type: B200-180GB
+  provisioning: on-demand
+  usd_per_gpu_hour: 8.73
+  product: B200
+  source: https://www.runcrate.ai/api/gpu-pricing
+  checked_at: '2026-11-08'
+  notes: live on-demand price per GPU-hour from the public pricing feed
+  live: true
+- provider: runcrate
+  gpu_type: H200-141GB
+  provisioning: on-demand
+  usd_per_gpu_hour: 5.13
+  product: H200
+  source: https://www.runcrate.ai/api/gpu-pricing
+  checked_at: '2026-11-08'
+  notes: live on-demand price per GPU-hour from the public pricing feed
+  live: true
+- provider: runcrate
+  gpu_type: L40S-48GB
+  provisioning: on-demand
+  usd_per_gpu_hour: 0.55
+  product: L40S
+  source: https://www.runcrate.ai/api/gpu-pricing
+  checked_at: '2026-11-08'
+  notes: live on-demand price per GPU-hour from the public pricing feed
+  live: true
+- provider: runcrate
+  gpu_type: RTX4090-24GB
+  provisioning: on-demand
+  usd_per_gpu_hour: 0.58
+  product: RTX 4090
+  source: https://www.runcrate.ai/api/gpu-pricing
+  checked_at: '2026-11-08'
+  notes: live on-demand price per GPU-hour from the public pricing feed
+  live: true
+- provider: runcrate
+  gpu_type: A10-24GB
+  provisioning: on-demand
+  usd_per_gpu_hour: 1.85
+  product: A10
+  source: https://www.runcrate.ai/api/gpu-pricing
+  checked_at: '2026-11-08'
+  notes: live on-demand price per GPU-hour from the public pricing feed
+  live: true
