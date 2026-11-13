@@ -72,17 +72,17 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-13'
 - model: Qwen/Qwen3.8-27B
-  provider: Tenstorrent
-  usd_per_1m_input: 0.15
-  usd_per_1m_output: 1.6
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.22
+  usd_per_1m_output: 1.562
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-13'
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
-  usd_per_1m_input: 0.259
-  usd_per_1m_output: 1.839
+  provider: Tenstorrent
+  usd_per_1m_input: 0.15
+  usd_per_1m_output: 1.6
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
