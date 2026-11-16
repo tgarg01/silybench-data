@@ -50,7 +50,7 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: PrimeIntellect
   usd_per_1m_input: 0.078
-  usd_per_1m_output: 0.556
+  usd_per_1m_output: 0.554
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
@@ -96,11 +96,27 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-16'
 - model: Qwen/Qwen3.8-27B
+  provider: Mancer 2
+  usd_per_1m_input: 0.125
+  usd_per_1m_output: 1.5
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-16'
+- model: Qwen/Qwen3.8-27B
   provider: Tenstorrent
   usd_per_1m_input: 0.15
   usd_per_1m_output: 1.6
   quantization: fp8
   context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-16'
+- model: Qwen/Qwen3.8-27B
+  provider: Io Net
+  usd_per_1m_input: 0.1
+  usd_per_1m_output: 1.8
+  quantization: fp8
+  context_length: 65536
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-16'
 - model: Qwen/Qwen3.8-27B
@@ -123,14 +139,6 @@ offers:
   provider: AkashML
   usd_per_1m_input: 0.225
   usd_per_1m_output: 1.98
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-16'
-- model: Qwen/Qwen3.8-27B
-  provider: Mancer 2
-  usd_per_1m_input: 0.125
-  usd_per_1m_output: 2.0
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
