@@ -48,27 +48,11 @@ offers:
   fetched_at: '2026-09-25'
   notes: 4B-16B size-tier price (Standard tier)
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
-  usd_per_1m_input: 0.06
-  usd_per_1m_output: 0.427
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-17'
-- model: Qwen/Qwen3.8-27B
   provider: StreamLake
   usd_per_1m_input: 0.175
   usd_per_1m_output: 1.05
   quantization: null
   context_length: 1024000
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-17'
-- model: Qwen/Qwen3.8-27B
-  provider: Io Net
-  usd_per_1m_input: 0.062
-  usd_per_1m_output: 1.116
-  quantization: fp8
-  context_length: 65536
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-17'
 - model: Qwen/Qwen3.8-27B
@@ -245,6 +229,14 @@ offers:
   usd_per_1m_output: 3.2
   quantization: fp8
   context_length: 1000000
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-17'
+- model: Qwen/Qwen3.8-27B
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.45
+  usd_per_1m_output: 3.2
+  quantization: fp8
+  context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-17'
 - model: Qwen/Qwen3.8-27B
