@@ -104,14 +104,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-18'
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
-  usd_per_1m_input: 0.262
-  usd_per_1m_output: 1.86
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-18'
-- model: Qwen/Qwen3.8-27B
   provider: DeepInfra
   usd_per_1m_input: 0.15
   usd_per_1m_output: 1.875
@@ -195,6 +187,14 @@ offers:
   provider: SiliconFlow
   usd_per_1m_input: 0.425
   usd_per_1m_output: 2.55
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-18'
+- model: Qwen/Qwen3.8-27B
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.39
+  usd_per_1m_output: 2.774
   quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
