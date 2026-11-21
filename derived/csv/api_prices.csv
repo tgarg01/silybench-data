@@ -26,6 +26,6 @@ Qwen/Qwen3.8-27B,SiliconFlow,0.425,2.55,fp8,262144,https://openrouter.ai/qwen/qw
 Qwen/Qwen3.8-27B,CoreWeave,0.4,3.0,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
 Qwen/Qwen3.8-27B,Nebius,0.45,3.0,fp4,1000000,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
 Qwen/Qwen3.8-27B,Novita,0.42,3.0,,1000000,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
+Qwen/Qwen3.8-27B,PrimeIntellect,0.439,3.12,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
 Qwen/Qwen3.8-27B,Cloudflare,0.45,3.2,,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
-Qwen/Qwen3.8-27B,PrimeIntellect,0.45,3.2,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,
 Qwen/Qwen3.8-27B,Venice,0.45,3.2,fp8,262144,https://openrouter.ai/qwen/qwen3.8-27b/providers,2026-11-21,

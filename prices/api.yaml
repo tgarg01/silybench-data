@@ -216,18 +216,18 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-21'
 - model: Qwen/Qwen3.8-27B
-  provider: Cloudflare
-  usd_per_1m_input: 0.45
-  usd_per_1m_output: 3.2
-  quantization: null
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.439
+  usd_per_1m_output: 3.12
+  quantization: fp8
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-21'
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
+  provider: Cloudflare
   usd_per_1m_input: 0.45
   usd_per_1m_output: 3.2
-  quantization: fp8
+  quantization: null
   context_length: 262144
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-21'
