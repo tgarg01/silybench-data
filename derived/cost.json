@@ -537,6 +537,17 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
+      "provider": "Wafer",
+      "usd_per_1m_input": 0.06,
+      "usd_per_1m_output": 1.96,
+      "quantization": "fp8",
+      "context_length": 262144,
+      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
+      "fetched_at": "2026-11-24",
+      "notes": null
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
       "provider": "AkashML",
       "usd_per_1m_input": 0.225,
       "usd_per_1m_output": 1.98,
@@ -636,11 +647,11 @@
     },
     {
       "model": "Qwen/Qwen3.8-27B",
-      "provider": "Novita",
-      "usd_per_1m_input": 0.42,
-      "usd_per_1m_output": 3.0,
-      "quantization": null,
-      "context_length": 1000000,
+      "provider": "PrimeIntellect",
+      "usd_per_1m_input": 0.439,
+      "usd_per_1m_output": 3.12,
+      "quantization": "fp8",
+      "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-24",
       "notes": null
@@ -651,17 +662,6 @@
       "usd_per_1m_input": 0.45,
       "usd_per_1m_output": 3.2,
       "quantization": null,
-      "context_length": 262144,
-      "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
-      "fetched_at": "2026-11-24",
-      "notes": null
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "provider": "PrimeIntellect",
-      "usd_per_1m_input": 0.45,
-      "usd_per_1m_output": 3.2,
-      "quantization": "fp8",
       "context_length": 262144,
       "source": "https://openrouter.ai/qwen/qwen3.8-27b/providers",
       "fetched_at": "2026-11-24",
