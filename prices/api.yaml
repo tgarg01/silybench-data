@@ -72,6 +72,14 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-27'
 - model: Qwen/Qwen3.8-27B
+  provider: Tenstorrent
+  usd_per_1m_input: 0.13
+  usd_per_1m_output: 1.4
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-27'
+- model: Qwen/Qwen3.8-27B
   provider: Cerebras
   usd_per_1m_input: 0.99
   usd_per_1m_output: 1.49
@@ -96,14 +104,6 @@ offers:
   source: https://openrouter.ai/qwen/qwen3.8-27b/providers
   fetched_at: '2026-11-27'
 - model: Qwen/Qwen3.8-27B
-  provider: PrimeIntellect
-  usd_per_1m_input: 0.054
-  usd_per_1m_output: 1.765
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-27'
-- model: Qwen/Qwen3.8-27B
   provider: DeepInfra
   usd_per_1m_input: 0.15
   usd_per_1m_output: 1.875
@@ -114,6 +114,14 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Ionstream
   usd_per_1m_input: 0.04
+  usd_per_1m_output: 1.95
+  quantization: fp8
+  context_length: 262144
+  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
+  fetched_at: '2026-11-27'
+- model: Qwen/Qwen3.8-27B
+  provider: PrimeIntellect
+  usd_per_1m_input: 0.06
   usd_per_1m_output: 1.95
   quantization: fp8
   context_length: 262144
@@ -138,14 +146,6 @@ offers:
 - model: Qwen/Qwen3.8-27B
   provider: Pearl Research
   usd_per_1m_input: 0.1
-  usd_per_1m_output: 2.0
-  quantization: fp8
-  context_length: 262144
-  source: https://openrouter.ai/qwen/qwen3.8-27b/providers
-  fetched_at: '2026-11-27'
-- model: Qwen/Qwen3.8-27B
-  provider: Tenstorrent
-  usd_per_1m_input: 0.3
   usd_per_1m_output: 2.0
   quantization: fp8
   context_length: 262144
